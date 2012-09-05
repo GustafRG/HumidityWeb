@@ -1,0 +1,383 @@
+INFO 5 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 5 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+INFO 5 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 5 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 5 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 5 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 5 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 5 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+INFO 5 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 5 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 5 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 5 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+INFO 5 NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+INFO 5 NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+INFO 5 NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+INFO 5 NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+INFO 5 NHibernate.Cfg.SettingsFactory - echoing all SQL to stdout
+INFO 5 NHibernate.Cfg.SettingsFactory - Statistics: disabled
+INFO 5 NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO 5 NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+INFO 5 NHibernate.Cfg.SettingsFactory - Query language substitutions: {}
+INFO 5 NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+DEBUG 5 NHibernate.Cfg.SettingsFactory - Wrap result sets: disabled
+INFO 5 NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+INFO 5 NHibernate.Cfg.SettingsFactory - Default entity-mode: Poco
+INFO 5 NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+INFO 5 NHibernate.Impl.SessionFactoryImpl - building session factory
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - instantiating session factory with properties: {'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'proxyfactory.factory_class'='NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle', 'connection.driver_class'='NHibernate.Driver.SqlClientDriver, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.MsSql2008Dialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.MsSql2008Dialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'show_sql'='true', 'connection.connection_string'='Data Source=localhost;Initial Catalog=dbMVC3Lab1;User ID=MVC3;Password=mvc3'}
+DEBUG 5 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 5 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 5 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Group
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 5 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Person
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Group.Members
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Person_id = ? WHERE Group_id = ? AND Person_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Group_id = ? AND Person_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Person.MemberOfGroups
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Person_id, Group_id) VALUES (?, ?)
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Group_id = ? WHERE Person_id = ? AND Group_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Person_id = ? AND Group_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Person_id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Group
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM [Group] WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT group_.Id, group_.Name as Name0_ FROM [Group] group_ WHERE group_.Id=?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO [Group] (Name, Id) VALUES (?, ?)
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE [Group] SET Name = ? WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM [Group] WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO [Group] (Name) VALUES (?); select SCOPE_IDENTITY()
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM [Group] group0_ WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM [Group] group0_ WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM [Group] group0_ with (updlock, rowlock) WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM [Group] group0_ with (updlock, rowlock) WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM [Group] group0_ with (updlock, rowlock) WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM [Group] group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join [Person] person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM [Group] group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join [Person] person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Person
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM [Person] WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT person_.Id, person_.FirstName as FirstName2_, person_.LastName as LastName2_ FROM [Person] person_ WHERE person_.Id=?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO [Person] (FirstName, LastName, Id) VALUES (?, ?, ?)
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE [Person] SET FirstName = ?, LastName = ? WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM [Person] WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO [Person] (FirstName, LastName) VALUES (?, ?); select SCOPE_IDENTITY()
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM [Person] person0_ WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM [Person] person0_ WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM [Person] person0_ with (updlock, rowlock) WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM [Person] person0_ with (updlock, rowlock) WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM [Person] person0_ with (updlock, rowlock) WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM [Person] person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join [Group] group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM [Person] person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join [Group] group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Group.Members: SELECT members0_.Group_id as Group1_1_, members0_.Person_id as Person2_1_, person1_.Id as Id2_0_, person1_.FirstName as FirstName2_0_, person1_.LastName as LastName2_0_ FROM PersonGroup members0_ left outer join [Person] person1_ on members0_.Person_id=person1_.Id WHERE members0_.Group_id=?
+DEBUG 5 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Person.MemberOfGroups: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 5 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 5 NHibernate.Impl.SessionFactoryObjectFactory - registered: e88f09e1f80a439ab0f74caa8c4ffaf3(unnamed)
+INFO 5 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0853b871-b3dc-41d6-a89b-82f7dd223e9d] opened session at timestamp: 634688157427, for session factory: [/e88f09e1f80a439ab0f74caa8c4ffaf3]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0853b871-b3dc-41d6-a89b-82f7dd223e9d] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0853b871-b3dc-41d6-a89b-82f7dd223e9d] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=9fdb3b8a-a64e-41f3-87ba-d256f6e0b95e] opened session at timestamp: 634688158835, for session factory: [/e88f09e1f80a439ab0f74caa8c4ffaf3]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=9fdb3b8a-a64e-41f3-87ba-d256f6e0b95e] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=9fdb3b8a-a64e-41f3-87ba-d256f6e0b95e] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=f94b7f85-09db-4896-b0e5-c73f1394a043] opened session at timestamp: 634688158860, for session factory: [/e88f09e1f80a439ab0f74caa8c4ffaf3]
+DEBUG 9 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id0_0_, this_.Name as Name0_0_ FROM [Group] this_
+INFO 9 NHibernate.Loader.Loader - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_ FROM [Group] this_
+DEBUG 9 NHibernate.SQL - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_ FROM [Group] this_
+DEBUG 9 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 49 ms
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 9 NHibernate.Loader.Loader - processing result set
+DEBUG 9 NHibernate.Loader.Loader - result set row: 0
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Group#1]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Group#1]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Group#1]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 1
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Group#2]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Group#2]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Group#2]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 2
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Group#3]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Group#3]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Group#3]
+DEBUG 9 NHibernate.Loader.Loader - done processing result set (3 rows)
+DEBUG 9 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 75 ms
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 9 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 9 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 9 NHibernate.Loader.Loader - total objects hydrated: 3
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Group#1]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#1]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#1]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Group#2]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#2]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#2]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Group#3]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#3]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#3]
+DEBUG 9 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 9 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 9 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 9 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 9 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id2_0_, this_.FirstName as FirstName2_0_, this_.LastName as LastName2_0_ FROM [Person] this_
+INFO 9 NHibernate.Loader.Loader - SELECT this_.Id as Id2_0_, this_.FirstName as FirstName2_0_, this_.LastName as LastName2_0_ FROM [Person] this_
+DEBUG 9 NHibernate.SQL - SELECT this_.Id as Id2_0_, this_.FirstName as FirstName2_0_, this_.LastName as LastName2_0_ FROM [Person] this_
+DEBUG 9 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 24 ms
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 9 NHibernate.Loader.Loader - processing result set
+DEBUG 9 NHibernate.Loader.Loader - result set row: 0
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#1]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#1]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#1]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 1
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#2]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#2]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#2]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 2
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#3]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#3]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#3]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 3
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#4]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#4]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#4]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 4
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#5]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#5]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#5]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 5
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#6]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#6]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#6]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 6
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#7]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#7]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#7]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 7
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#8]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#8]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#8]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 8
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#9]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#9]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#9]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 9
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#10]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#10]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#10]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 10
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#11]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#11]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#11]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 11
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#12]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#12]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#12]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 12
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#13]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#13]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#13]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 13
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#14]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#14]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#14]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 14
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#15]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#15]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#15]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 15
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#16]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#16]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#16]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 16
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#17]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#17]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#17]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 17
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#18]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#18]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#18]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 18
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#19]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#19]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#19]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 19
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#20]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#20]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#20]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 20
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#21]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#21]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#21]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 21
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#22]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#22]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#22]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 22
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#23]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#23]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#23]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 23
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#24]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#24]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#24]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 24
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#25]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#25]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#25]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 25
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#26]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#26]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#26]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 26
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#27]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#27]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#27]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 27
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#28]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#28]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#28]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 28
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#29]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#29]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#29]
+DEBUG 9 NHibernate.Loader.Loader - result set row: 29
+DEBUG 9 NHibernate.Loader.Loader - result row: EntityKey[Person#30]
+DEBUG 9 NHibernate.Loader.Loader - Initializing object from DataReader: [Person#30]
+DEBUG 9 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Person#30]
+DEBUG 9 NHibernate.Loader.Loader - done processing result set (30 rows)
+DEBUG 9 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 27 ms
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 9 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 9 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 9 NHibernate.Loader.Loader - total objects hydrated: 30
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#1]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#1]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#1]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#2]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#2]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#2]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#3]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#3]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#3]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#4]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#4]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#4]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#5]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#5]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#5]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#6]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#6]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#6]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#7]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#7]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#7]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#8]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#8]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#8]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#9]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#9]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#9]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#10]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#10]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#10]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#11]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#11]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#11]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#12]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#12]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#12]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#13]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#13]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#13]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#14]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#14]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#14]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#15]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#15]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#15]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#16]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#16]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#16]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#17]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#17]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#17]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#18]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#18]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#18]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#19]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#19]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#19]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#20]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#20]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#20]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#21]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#21]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#21]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#22]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#22]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#22]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#23]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#23]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#23]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#24]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#24]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#24]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#25]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#25]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#25]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#26]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#26]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#26]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#27]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#27]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#27]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#28]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#28]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#28]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#29]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#29]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#29]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Person#30]
+DEBUG 9 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Person.MemberOfGroups#30]
+DEBUG 9 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Person#30]
+DEBUG 9 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 9 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 9 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 9 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=f94b7f85-09db-4896-b0e5-c73f1394a043] running ISession.Dispose()
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=f94b7f85-09db-4896-b0e5-c73f1394a043] executing real Dispose(True)
+DEBUG 9 NHibernate.Impl.SessionImpl - closing session
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=1e811428-93f7-4693-8357-5a50a07eab98] opened session at timestamp: 634688158882, for session factory: [/e88f09e1f80a439ab0f74caa8c4ffaf3]
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=1e811428-93f7-4693-8357-5a50a07eab98] running ISession.Dispose()
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=1e811428-93f7-4693-8357-5a50a07eab98] executing real Dispose(True)
+DEBUG 15 NHibernate.Impl.SessionImpl - closing session
+DEBUG 15 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=42e812d6-2b0d-4449-a4b5-994c57482eab] opened session at timestamp: 634688158904, for session factory: [/e88f09e1f80a439ab0f74caa8c4ffaf3]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=42e812d6-2b0d-4449-a4b5-994c57482eab] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=42e812d6-2b0d-4449-a4b5-994c57482eab] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 32 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 32 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

@@ -1,0 +1,33 @@
+﻿@model Gustaf.Lab1.Web.Models.AddPersonToGroupModel
+@{
+    ViewBag.Title = "AddPersonToGroup";
+}
+<h2>AddPersonToGroup</h2>
+@using (Html.BeginForm())
+{
+    @Html.DropDownList("PeopleDropDown")
+
+    @Html.DropDownList("GroupsDropDown")
+
+    <input class="button" type="button" value="Add" />
+    <div id="message"></div>
+    <script type="text/javascript">
+        $(function (e) {
+            $(".button").click(function () {
+                addToGroup();
+            });
+        });
+        function addToGroup() {
+            var inputData = {
+            };
+            inputData.PersonId = $("#PeopleDropDown").val();
+            inputData.GroupId = $("#GroupsDropDown").val();
+            $.getJSON("Add", inputData, updateFields);
+        };
+
+        updateFields = function (data) {
+            $("#message").html(data.Message);
+        };
+    </script>
+    
+}

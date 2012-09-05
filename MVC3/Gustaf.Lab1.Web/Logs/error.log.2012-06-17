@@ -1,0 +1,130 @@
+DEBUG 10 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Person
+DEBUG 10 NHibernate.Event.Default.AbstractSaveEventListener - persistent instance of: Person
+DEBUG 10 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - ignoring persistent instance
+DEBUG 10 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Person#3]
+INFO 10 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 10 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - dirty checking collections
+DEBUG 10 NHibernate.Engine.CollectionEntry - Collection dirty: [Person.MemberOfGroups#3]
+DEBUG 10 NHibernate.Engine.CollectionEntry - Collection dirty: [Group.Members#3]
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - Flushing entities and processing referenced collections
+DEBUG 10 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#1], was: [Person.MemberOfGroups#1] (uninitialized)
+DEBUG 10 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#2], was: [Person.MemberOfGroups#2] (uninitialized)
+DEBUG 10 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#3], was: [Person.MemberOfGroups#3] (uninitialized)
+DEBUG 10 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#4], was: [Person.MemberOfGroups#4] (uninitialized)
+DEBUG 10 NHibernate.Engine.Collections - Collection found: [Group.Members#1], was: [Group.Members#1] (uninitialized)
+DEBUG 10 NHibernate.Engine.Collections - Collection found: [Group.Members#2], was: [Group.Members#2] (uninitialized)
+DEBUG 10 NHibernate.Engine.Collections - Collection found: [Group.Members#3], was: [Group.Members#3] (initialized)
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - Processing unreferenced collections
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - Scheduling collection removes/(re)creates/updates
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 7 objects
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 (re)creations, 2 updates, 0 removals to 7 collections
+DEBUG 10 NHibernate.Impl.Printer - listing entities:
+DEBUG 10 NHibernate.Impl.Printer - Person{'Id'='1', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Chris', 'LastName'='Christofferson'}
+DEBUG 10 NHibernate.Impl.Printer - Person{'Id'='2', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Lee', 'LastName'='Lee'}
+DEBUG 10 NHibernate.Impl.Printer - Person{'Id'='3', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Alexander', 'LastName'='Johnson'}
+DEBUG 10 NHibernate.Impl.Printer - Person{'Id'='4', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Gustaf', 'LastName'='Rylander-Gerdeman'}
+DEBUG 10 NHibernate.Impl.Printer - Group{'Id'='1', 'Members'='<uninitialized>', 'Name'='TestGroup'}
+DEBUG 10 NHibernate.Impl.Printer - Group{'Id'='2', 'Members'='<uninitialized>', 'Name'='Unknown'}
+DEBUG 10 NHibernate.Impl.Printer - Group{'Id'='3', 'Members'='['Person#4', 'Person#3']', 'Name'='MVC-Ninjahz'}
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - executing flush
+DEBUG 10 NHibernate.AdoNet.ConnectionManager - registering flush begin
+DEBUG 10 NHibernate.Persister.Collection.ICollectionPersister - Deleting collection: [Group.Members#3]
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 10 NHibernate.SQL - DELETE FROM PersonGroup WHERE Group_id = @p0;@p0 = 3 [Type: Int32 (0)]
+DEBUG 10 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 1 ms
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 10 NHibernate.Persister.Collection.ICollectionPersister - done deleting collection
+DEBUG 10 NHibernate.Persister.Collection.ICollectionPersister - Inserting collection: [Group.Members#3]
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 10 NHibernate.SQL - INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1);@p0 = 3 [Type: Int32 (0)], @p1 = 4 [Type: Int32 (0)]
+DEBUG 10 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 0 ms
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - reusing command INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1)
+DEBUG 10 NHibernate.SQL - INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1);@p0 = 3 [Type: Int32 (0)], @p1 = 3 [Type: Int32 (0)]
+DEBUG 10 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 0 ms
+DEBUG 10 NHibernate.Persister.Collection.ICollectionPersister - done inserting collection: 2 rows inserted
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - ExecuteBatch for 1 statements took 0 ms
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 10 NHibernate.AdoNet.ConnectionManager - registering flush end
+DEBUG 10 NHibernate.Event.Default.AbstractFlushingEventListener - post flush
+DEBUG 10 NHibernate.Impl.SessionImpl - before transaction completion
+DEBUG 10 NHibernate.Transaction.AdoTransaction - IDbTransaction Committed
+DEBUG 10 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 10 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 10 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 10 NHibernate.Transaction.AdoTransaction - IDbTransaction disposed.
+DEBUG 10 Gustaf.Lab1.Web.Repositories.Repository - Persisted Updated Group, added Alexander Johnson to GroupMVC-Ninjahz
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=8bc76205-b5ef-4728-8b2d-995982099f03] running ISession.Dispose()
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=8bc76205-b5ef-4728-8b2d-995982099f03] executing real Dispose(True)
+DEBUG 10 NHibernate.Impl.SessionImpl - closing session
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=8bc9a746-5e7e-4bd5-b526-5499da12646b] opened session at timestamp: 634755694583, for session factory: [/e83d4a41bd294a518b0465e700e8a9b9]
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=8bc9a746-5e7e-4bd5-b526-5499da12646b] running ISession.Dispose()
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=8bc9a746-5e7e-4bd5-b526-5499da12646b] executing real Dispose(True)
+DEBUG 10 NHibernate.Impl.SessionImpl - closing session
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=ceaa3ade-f0b4-4966-ae0a-b5b009899dd7] opened session at timestamp: 634755694907, for session factory: [/e83d4a41bd294a518b0465e700e8a9b9]
+DEBUG 5 NHibernate.Transaction.AdoTransaction - Begin (Unspecified)
+DEBUG 5 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 5 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - saving transient instance
+DEBUG 5 NHibernate.Event.Default.AbstractSaveEventListener - saving [Person#<null>]
+INFO 5 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 5 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+DEBUG 5 NHibernate.Event.Default.AbstractSaveEventListener - executing insertions
+DEBUG 5 NHibernate.Event.Default.WrapVisitor - Wrapped collection in role: Person.MemberOfGroups
+DEBUG 5 NHibernate.Event.Default.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister - Inserting entity: Person (native id)
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO "Person" (FirstName, LastName) VALUES (?, ?); select last_insert_rowid()
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [Person#<null>]
+DEBUG 5 NHibernate.SQL - INSERT INTO "Person" (FirstName, LastName) VALUES (@p0, @p1); select last_insert_rowid();@p0 = 'John' [Type: String (0)], @p1 = 'Smith' [Type: String (0)]
+DEBUG 5 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 4 ms
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 5 NHibernate.Id.IdentifierGeneratorFactory - Natively generated identity: 5
+DEBUG 5 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 6 ms
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+INFO 5 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 5 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 5 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 5 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+DEBUG 5 NHibernate.Transaction.AdoTransaction - Start Commit
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - flushing session
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - processing flush-time cascades
+INFO 5 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 5 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 5 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 5 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - dirty checking collections
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - Flushing entities and processing referenced collections
+DEBUG 5 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#5], was: [<unreferenced>] (initialized)
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - Processing unreferenced collections
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - Scheduling collection removes/(re)creates/updates
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+DEBUG 5 NHibernate.Impl.Printer - listing entities:
+DEBUG 5 NHibernate.Impl.Printer - Person{'Id'='5', 'MemberOfGroups'='[]', 'FirstName'='John', 'LastName'='Smith'}
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - executing flush
+DEBUG 5 NHibernate.AdoNet.ConnectionManager - registering flush begin
+DEBUG 5 NHibernate.AdoNet.ConnectionManager - registering flush end
+DEBUG 5 NHibernate.Event.Default.AbstractFlushingEventListener - post flush
+DEBUG 5 NHibernate.Impl.SessionImpl - before transaction completion
+DEBUG 5 NHibernate.Transaction.AdoTransaction - IDbTransaction Committed
+DEBUG 5 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 5 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 5 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 5 NHibernate.Transaction.AdoTransaction - IDbTransaction disposed.
+DEBUG 5 Gustaf.Lab1.Web.Repositories.Repository - Persisted Person: John Smith
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=ceaa3ade-f0b4-4966-ae0a-b5b009899dd7] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=ceaa3ade-f0b4-4966-ae0a-b5b009899dd7] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 10 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 10 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

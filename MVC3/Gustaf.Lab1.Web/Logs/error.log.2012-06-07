@@ -1,0 +1,678 @@
+INFO 1 NHibernate.Cfg.Environment - NHibernate 3.1.0.4000 (3.1.0.4000)
+INFO 1 NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+INFO 1 NHibernate.Cfg.Environment - Bytecode provider name : lcg
+INFO 1 NHibernate.Cfg.Environment - Using reflection optimizer
+DEBUG 1 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Group`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" name="Members" table="PersonGroup"><key><column name="Group_id" /></key><many-to-many class="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Person_id" /></many-to-many></bag><property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Name" /></property></class></hibernate-mapping>
+INFO 1 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Group -> Group
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Group.Members -> PersonGroup
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Members, type: System.Collections.Generic.ICollection`1[[Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Group.Members)
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Name -> Name, type: String
+DEBUG 1 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Person`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" inverse="true" name="MemberOfGroups" table="PersonGroup"><key><column name="Person_id" /></key><many-to-many class="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Group_id" /></many-to-many></bag><property name="FirstName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="FirstName" length="25" not-null="false" /></property><property name="LastName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="LastName" length="25" not-null="false" /></property></class></hibernate-mapping>
+INFO 1 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Person -> Person
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Person.MemberOfGroups -> PersonGroup
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: MemberOfGroups, type: System.Collections.Generic.ICollection`1[[Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Person.MemberOfGroups)
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: FirstName -> FirstName, type: String
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: LastName -> LastName, type: String
+INFO 1 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - fetching database metadata
+INFO 1 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 1 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+DEBUG 1 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - updating schema
+INFO 1 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 1 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Group.Members
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Group_id, element: Person_id, type: Person
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Person.MemberOfGroups
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Person_id, element: Group_id, type: Group
+INFO 1 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 1 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 1 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 1 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 1 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Group
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - columns: id, name
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_group
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - table found: main.PersonGroup
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - columns: group_id, person_id
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - indexes: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Person
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - columns: id, firstname, lastname
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_person
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - schema update complete
+DEBUG 1 NHibernate.Connection.ConnectionProvider - Closing connection
+INFO 8 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 8 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+INFO 8 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 8 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 8 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 8 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 8 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 8 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 8 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 8 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 8 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 8 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+INFO 8 NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+INFO 8 NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+INFO 8 NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+INFO 8 NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+INFO 8 NHibernate.Cfg.SettingsFactory - Statistics: disabled
+INFO 8 NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO 8 NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+INFO 8 NHibernate.Cfg.SettingsFactory - Query language substitutions: {'true'='1', 'false'='0'}
+INFO 8 NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+DEBUG 8 NHibernate.Cfg.SettingsFactory - Wrap result sets: disabled
+INFO 8 NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+INFO 8 NHibernate.Cfg.SettingsFactory - Default entity-mode: Poco
+INFO 8 NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+INFO 8 NHibernate.Impl.SessionFactoryImpl - building session factory
+DEBUG 8 NHibernate.Impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG 8 NHibernate.Impl.SessionFactoryImpl - instantiating session factory with properties: {'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'proxyfactory.factory_class'='NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle', 'connection.driver_class'='NHibernate.Driver.SQLite20Driver, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'query.substitutions'='true=1;false=0', 'connection.connection_string'='Data Source=C:\Users\et36198\Desktop\Gustaf.Lab1.Web\App_Data\mvc3.db;Version=3;New=True;'}
+DEBUG 8 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 8 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 8 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 8 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 8 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Group
+DEBUG 8 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 8 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 8 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Person
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Group.Members
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Person_id = ? WHERE Group_id = ? AND Person_id = ?
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Group_id = ? AND Person_id = ?
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Person.MemberOfGroups
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Person_id, Group_id) VALUES (?, ?)
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Group_id = ? WHERE Person_id = ? AND Group_id = ?
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Person_id = ? AND Group_id = ?
+DEBUG 8 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Person_id = ?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Group
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Group" WHERE Id = ?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT group_.Id, group_.Name as Name0_ FROM "Group" group_ WHERE group_.Id=?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Group" (Name, Id) VALUES (?, ?)
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Group" SET Name = ? WHERE Id = ?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Group" WHERE Id = ?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Group" (Name) VALUES (?); select last_insert_rowid()
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Person
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Person" WHERE Id = ?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT person_.Id, person_.FirstName as FirstName2_, person_.LastName as LastName2_ FROM "Person" person_ WHERE person_.Id=?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Person" (FirstName, LastName, Id) VALUES (?, ?, ?)
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Person" SET FirstName = ?, LastName = ? WHERE Id = ?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Person" WHERE Id = ?
+DEBUG 8 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Person" (FirstName, LastName) VALUES (?, ?); select last_insert_rowid()
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 8 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 8 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Group.Members: SELECT members0_.Group_id as Group1_1_, members0_.Person_id as Person2_1_, person1_.Id as Id2_0_, person1_.FirstName as FirstName2_0_, person1_.LastName as LastName2_0_ FROM PersonGroup members0_ left outer join "Person" person1_ on members0_.Person_id=person1_.Id WHERE members0_.Group_id=?
+DEBUG 8 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Person.MemberOfGroups: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 8 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 8 NHibernate.Impl.SessionFactoryObjectFactory - registered: 2e49c8dd6b76472880bc57208dc788b5(unnamed)
+INFO 8 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 8 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 8 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 8 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=2d302eb4-4af3-40ad-8805-b931f0b45b20] opened session at timestamp: 634746739896, for session factory: [/2e49c8dd6b76472880bc57208dc788b5]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=2d302eb4-4af3-40ad-8805-b931f0b45b20] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=2d302eb4-4af3-40ad-8805-b931f0b45b20] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=377e518a-40a5-4f46-8d95-0454cacd4ef6] opened session at timestamp: 634746739929, for session factory: [/2e49c8dd6b76472880bc57208dc788b5]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=377e518a-40a5-4f46-8d95-0454cacd4ef6] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=377e518a-40a5-4f46-8d95-0454cacd4ef6] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=446c1897-2ec3-467b-ab57-40ed6485f7f7] opened session at timestamp: 634746740012, for session factory: [/2e49c8dd6b76472880bc57208dc788b5]
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=446c1897-2ec3-467b-ab57-40ed6485f7f7] running ISession.Dispose()
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=446c1897-2ec3-467b-ab57-40ed6485f7f7] executing real Dispose(True)
+DEBUG 14 NHibernate.Impl.SessionImpl - closing session
+DEBUG 14 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=b2e2cf10-0978-4d82-9b73-6ed431f471bf] opened session at timestamp: 634746742044, for session factory: [/2e49c8dd6b76472880bc57208dc788b5]
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=b2e2cf10-0978-4d82-9b73-6ed431f471bf] running ISession.Dispose()
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=b2e2cf10-0978-4d82-9b73-6ed431f471bf] executing real Dispose(True)
+DEBUG 14 NHibernate.Impl.SessionImpl - closing session
+DEBUG 14 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=915023d5-3596-4113-b7f0-c58f320cbfb2] opened session at timestamp: 634746742055, for session factory: [/2e49c8dd6b76472880bc57208dc788b5]
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=915023d5-3596-4113-b7f0-c58f320cbfb2] running ISession.Dispose()
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=915023d5-3596-4113-b7f0-c58f320cbfb2] executing real Dispose(True)
+DEBUG 15 NHibernate.Impl.SessionImpl - closing session
+DEBUG 15 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=42fb28ca-4282-4a6c-9c51-706c3b7cb469] opened session at timestamp: 634746742078, for session factory: [/2e49c8dd6b76472880bc57208dc788b5]
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=42fb28ca-4282-4a6c-9c51-706c3b7cb469] running ISession.Dispose()
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=42fb28ca-4282-4a6c-9c51-706c3b7cb469] executing real Dispose(True)
+DEBUG 17 NHibernate.Impl.SessionImpl - closing session
+DEBUG 17 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 17 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 17 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.
+INFO 13 NHibernate.Cfg.Environment - NHibernate 3.1.0.4000 (3.1.0.4000)
+INFO 13 NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+INFO 13 NHibernate.Cfg.Environment - Bytecode provider name : lcg
+INFO 13 NHibernate.Cfg.Environment - Using reflection optimizer
+DEBUG 13 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Group`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" name="Members" table="PersonGroup"><key><column name="Group_id" /></key><many-to-many class="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Person_id" /></many-to-many></bag><property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Name" /></property></class></hibernate-mapping>
+INFO 13 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Group -> Group
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Group.Members -> PersonGroup
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Members, type: System.Collections.Generic.ICollection`1[[Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Group.Members)
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Name -> Name, type: String
+DEBUG 13 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Person`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" inverse="true" name="MemberOfGroups" table="PersonGroup"><key><column name="Person_id" /></key><many-to-many class="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Group_id" /></many-to-many></bag><property name="FirstName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="FirstName" length="25" not-null="false" /></property><property name="LastName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="LastName" length="25" not-null="false" /></property></class></hibernate-mapping>
+INFO 13 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Person -> Person
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Person.MemberOfGroups -> PersonGroup
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: MemberOfGroups, type: System.Collections.Generic.ICollection`1[[Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Person.MemberOfGroups)
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: FirstName -> FirstName, type: String
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: LastName -> LastName, type: String
+INFO 13 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - fetching database metadata
+INFO 13 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 13 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+DEBUG 13 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - updating schema
+INFO 13 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 13 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Group.Members
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Group_id, element: Person_id, type: Person
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Person.MemberOfGroups
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Person_id, element: Group_id, type: Group
+INFO 13 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 13 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 13 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 13 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 13 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Group
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - columns: id, name
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_group
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - table found: main.PersonGroup
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - columns: group_id, person_id
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - indexes: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Person
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - columns: id, firstname, lastname
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_person
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - schema update complete
+DEBUG 13 NHibernate.Connection.ConnectionProvider - Closing connection
+INFO 16 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 16 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+INFO 16 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 16 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 16 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 16 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 16 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 16 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 16 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 16 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 16 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 16 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+INFO 16 NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+INFO 16 NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+INFO 16 NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+INFO 16 NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+INFO 16 NHibernate.Cfg.SettingsFactory - Statistics: disabled
+INFO 16 NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO 16 NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+INFO 16 NHibernate.Cfg.SettingsFactory - Query language substitutions: {'true'='1', 'false'='0'}
+INFO 16 NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+DEBUG 16 NHibernate.Cfg.SettingsFactory - Wrap result sets: disabled
+INFO 16 NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+INFO 16 NHibernate.Cfg.SettingsFactory - Default entity-mode: Poco
+INFO 16 NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+INFO 16 NHibernate.Impl.SessionFactoryImpl - building session factory
+DEBUG 16 NHibernate.Impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG 16 NHibernate.Impl.SessionFactoryImpl - instantiating session factory with properties: {'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'proxyfactory.factory_class'='NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle', 'connection.driver_class'='NHibernate.Driver.SQLite20Driver, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'query.substitutions'='true=1;false=0', 'connection.connection_string'='Data Source=C:\Users\et36198\Desktop\Gustaf.Lab1.Web\App_Data\mvc3.db;Version=3;New=True;'}
+DEBUG 16 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 16 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 16 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 16 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 16 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Group
+DEBUG 16 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 16 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 16 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Person
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Group.Members
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Person_id = ? WHERE Group_id = ? AND Person_id = ?
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Group_id = ? AND Person_id = ?
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Person.MemberOfGroups
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Person_id, Group_id) VALUES (?, ?)
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Group_id = ? WHERE Person_id = ? AND Group_id = ?
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Person_id = ? AND Group_id = ?
+DEBUG 16 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Person_id = ?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Group
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Group" WHERE Id = ?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT group_.Id, group_.Name as Name0_ FROM "Group" group_ WHERE group_.Id=?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Group" (Name, Id) VALUES (?, ?)
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Group" SET Name = ? WHERE Id = ?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Group" WHERE Id = ?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Group" (Name) VALUES (?); select last_insert_rowid()
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Person
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Person" WHERE Id = ?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT person_.Id, person_.FirstName as FirstName2_, person_.LastName as LastName2_ FROM "Person" person_ WHERE person_.Id=?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Person" (FirstName, LastName, Id) VALUES (?, ?, ?)
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Person" SET FirstName = ?, LastName = ? WHERE Id = ?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Person" WHERE Id = ?
+DEBUG 16 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Person" (FirstName, LastName) VALUES (?, ?); select last_insert_rowid()
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 16 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 16 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Group.Members: SELECT members0_.Group_id as Group1_1_, members0_.Person_id as Person2_1_, person1_.Id as Id2_0_, person1_.FirstName as FirstName2_0_, person1_.LastName as LastName2_0_ FROM PersonGroup members0_ left outer join "Person" person1_ on members0_.Person_id=person1_.Id WHERE members0_.Group_id=?
+DEBUG 16 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Person.MemberOfGroups: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 16 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 16 NHibernate.Impl.SessionFactoryObjectFactory - registered: 22518cdf196748a3a3bf2b004a327a24(unnamed)
+INFO 16 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 16 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 16 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 16 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=c06787b5-3367-418a-8e8a-076f6c073850] opened session at timestamp: 634746742203, for session factory: [/22518cdf196748a3a3bf2b004a327a24]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=c06787b5-3367-418a-8e8a-076f6c073850] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=c06787b5-3367-418a-8e8a-076f6c073850] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=89bcb6e7-2cd6-4caf-a294-28f09b42d653] opened session at timestamp: 634746743033, for session factory: [/22518cdf196748a3a3bf2b004a327a24]
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=89bcb6e7-2cd6-4caf-a294-28f09b42d653] running ISession.Dispose()
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=89bcb6e7-2cd6-4caf-a294-28f09b42d653] executing real Dispose(True)
+DEBUG 14 NHibernate.Impl.SessionImpl - closing session
+DEBUG 14 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=170dd70d-b65d-40c7-b8ce-8408fee958c1] opened session at timestamp: 634746743816, for session factory: [/22518cdf196748a3a3bf2b004a327a24]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=170dd70d-b65d-40c7-b8ce-8408fee958c1] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=170dd70d-b65d-40c7-b8ce-8408fee958c1] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=6e4487ae-40c4-4146-ab15-8e28e39f13e5] opened session at timestamp: 634746744187, for session factory: [/22518cdf196748a3a3bf2b004a327a24]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=6e4487ae-40c4-4146-ab15-8e28e39f13e5] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=6e4487ae-40c4-4146-ab15-8e28e39f13e5] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=b1c25e87-cf80-402b-b438-3930e9cfb769] opened session at timestamp: 634746744225, for session factory: [/22518cdf196748a3a3bf2b004a327a24]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=b1c25e87-cf80-402b-b438-3930e9cfb769] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=b1c25e87-cf80-402b-b438-3930e9cfb769] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1ada1027-f0a7-45d2-9140-f2cfc3298bb4] opened session at timestamp: 634746744244, for session factory: [/22518cdf196748a3a3bf2b004a327a24]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1ada1027-f0a7-45d2-9140-f2cfc3298bb4] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1ada1027-f0a7-45d2-9140-f2cfc3298bb4] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 6 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 6 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.
+INFO 13 NHibernate.Cfg.Environment - NHibernate 3.1.0.4000 (3.1.0.4000)
+INFO 13 NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+INFO 13 NHibernate.Cfg.Environment - Bytecode provider name : lcg
+INFO 13 NHibernate.Cfg.Environment - Using reflection optimizer
+DEBUG 13 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Group`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" name="Members" table="PersonGroup"><key><column name="Group_id" /></key><many-to-many class="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Person_id" /></many-to-many></bag><property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Name" /></property></class></hibernate-mapping>
+INFO 13 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Group -> Group
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Group.Members -> PersonGroup
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Members, type: System.Collections.Generic.ICollection`1[[Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Group.Members)
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Name -> Name, type: String
+DEBUG 13 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Person`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" inverse="true" name="MemberOfGroups" table="PersonGroup"><key><column name="Person_id" /></key><many-to-many class="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Group_id" /></many-to-many></bag><property name="FirstName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="FirstName" length="25" not-null="false" /></property><property name="LastName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="LastName" length="25" not-null="false" /></property></class></hibernate-mapping>
+INFO 13 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Person -> Person
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Person.MemberOfGroups -> PersonGroup
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: MemberOfGroups, type: System.Collections.Generic.ICollection`1[[Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Person.MemberOfGroups)
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: FirstName -> FirstName, type: String
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: LastName -> LastName, type: String
+INFO 13 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - fetching database metadata
+INFO 13 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 13 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+DEBUG 13 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - updating schema
+INFO 13 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 13 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Group.Members
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Group_id, element: Person_id, type: Person
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Person.MemberOfGroups
+DEBUG 13 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Person_id, element: Group_id, type: Group
+INFO 13 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 13 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 13 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 13 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 13 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Group
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - columns: id, name
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_group
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - table found: main.PersonGroup
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - columns: group_id, person_id
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - indexes: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Person
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - columns: id, firstname, lastname
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 13 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_person
+INFO 13 NHibernate.Tool.hbm2ddl.SchemaUpdate - schema update complete
+DEBUG 13 NHibernate.Connection.ConnectionProvider - Closing connection
+INFO 21 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 21 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+INFO 21 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 21 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 21 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 21 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 21 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 21 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 21 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 21 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 21 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 21 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+INFO 21 NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+INFO 21 NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+INFO 21 NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+INFO 21 NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+INFO 21 NHibernate.Cfg.SettingsFactory - Statistics: disabled
+INFO 21 NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO 21 NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+INFO 21 NHibernate.Cfg.SettingsFactory - Query language substitutions: {'true'='1', 'false'='0'}
+INFO 21 NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+DEBUG 21 NHibernate.Cfg.SettingsFactory - Wrap result sets: disabled
+INFO 21 NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+INFO 21 NHibernate.Cfg.SettingsFactory - Default entity-mode: Poco
+INFO 21 NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+INFO 21 NHibernate.Impl.SessionFactoryImpl - building session factory
+DEBUG 21 NHibernate.Impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG 21 NHibernate.Impl.SessionFactoryImpl - instantiating session factory with properties: {'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'proxyfactory.factory_class'='NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle', 'connection.driver_class'='NHibernate.Driver.SQLite20Driver, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'query.substitutions'='true=1;false=0', 'connection.connection_string'='Data Source=C:\Users\et36198\Desktop\Gustaf.Lab1.Web\App_Data\mvc3.db;Version=3;New=True;'}
+DEBUG 21 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 21 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 21 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 21 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 21 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Group
+DEBUG 21 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 21 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 21 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Person
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Group.Members
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Person_id = ? WHERE Group_id = ? AND Person_id = ?
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Group_id = ? AND Person_id = ?
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Person.MemberOfGroups
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Person_id, Group_id) VALUES (?, ?)
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Group_id = ? WHERE Person_id = ? AND Group_id = ?
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Person_id = ? AND Group_id = ?
+DEBUG 21 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Person_id = ?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Group
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Group" WHERE Id = ?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT group_.Id, group_.Name as Name0_ FROM "Group" group_ WHERE group_.Id=?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Group" (Name, Id) VALUES (?, ?)
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Group" SET Name = ? WHERE Id = ?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Group" WHERE Id = ?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Group" (Name) VALUES (?); select last_insert_rowid()
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Person
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Person" WHERE Id = ?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT person_.Id, person_.FirstName as FirstName2_, person_.LastName as LastName2_ FROM "Person" person_ WHERE person_.Id=?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Person" (FirstName, LastName, Id) VALUES (?, ?, ?)
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Person" SET FirstName = ?, LastName = ? WHERE Id = ?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Person" WHERE Id = ?
+DEBUG 21 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Person" (FirstName, LastName) VALUES (?, ?); select last_insert_rowid()
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 21 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 21 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Group.Members: SELECT members0_.Group_id as Group1_1_, members0_.Person_id as Person2_1_, person1_.Id as Id2_0_, person1_.FirstName as FirstName2_0_, person1_.LastName as LastName2_0_ FROM PersonGroup members0_ left outer join "Person" person1_ on members0_.Person_id=person1_.Id WHERE members0_.Group_id=?
+DEBUG 21 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Person.MemberOfGroups: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 21 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 21 NHibernate.Impl.SessionFactoryObjectFactory - registered: 4c7d5fb1a5894fff80ee747965c58021(unnamed)
+INFO 21 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 21 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 21 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 21 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=c17165fb-4859-4bf9-a033-56bdd51ce9aa] opened session at timestamp: 634746745294, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=c17165fb-4859-4bf9-a033-56bdd51ce9aa] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=c17165fb-4859-4bf9-a033-56bdd51ce9aa] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=1b30ac2a-705a-4838-9eed-190458e248fb] opened session at timestamp: 634746745332, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=1b30ac2a-705a-4838-9eed-190458e248fb] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=1b30ac2a-705a-4838-9eed-190458e248fb] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=b8301366-95d2-4d10-9a2a-164c20d9350d] opened session at timestamp: 634746745348, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=b8301366-95d2-4d10-9a2a-164c20d9350d] running ISession.Dispose()
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=b8301366-95d2-4d10-9a2a-164c20d9350d] executing real Dispose(True)
+DEBUG 17 NHibernate.Impl.SessionImpl - closing session
+DEBUG 17 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=25d9d998-ab37-4d8d-961e-2593770fe848] opened session at timestamp: 634746745362, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=25d9d998-ab37-4d8d-961e-2593770fe848] running ISession.Dispose()
+DEBUG 10 NHibernate.Impl.SessionImpl - [session-id=25d9d998-ab37-4d8d-961e-2593770fe848] executing real Dispose(True)
+DEBUG 10 NHibernate.Impl.SessionImpl - closing session
+DEBUG 10 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c81806b6-1db9-40a2-8c02-fdb5e27d161a] opened session at timestamp: 634746745373, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c81806b6-1db9-40a2-8c02-fdb5e27d161a] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c81806b6-1db9-40a2-8c02-fdb5e27d161a] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=afa95565-90dd-4815-8bee-e44a8232f55c] opened session at timestamp: 634746745386, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=afa95565-90dd-4815-8bee-e44a8232f55c] running ISession.Dispose()
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=afa95565-90dd-4815-8bee-e44a8232f55c] executing real Dispose(True)
+DEBUG 15 NHibernate.Impl.SessionImpl - closing session
+DEBUG 15 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=d6a3a668-92f0-4cce-9038-df915cc19de1] opened session at timestamp: 634746745426, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=d6a3a668-92f0-4cce-9038-df915cc19de1] running ISession.Dispose()
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=d6a3a668-92f0-4cce-9038-df915cc19de1] executing real Dispose(True)
+DEBUG 9 NHibernate.Impl.SessionImpl - closing session
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=405987fd-c35d-45b6-bd94-1fd5d976ed83] opened session at timestamp: 634746746452, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=405987fd-c35d-45b6-bd94-1fd5d976ed83] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=405987fd-c35d-45b6-bd94-1fd5d976ed83] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=a2e0cd8b-1408-4681-aaaf-58dcc1af40ff] opened session at timestamp: 634746746464, for session factory: [/4c7d5fb1a5894fff80ee747965c58021]
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=a2e0cd8b-1408-4681-aaaf-58dcc1af40ff] running ISession.Dispose()
+DEBUG 17 NHibernate.Impl.SessionImpl - [session-id=a2e0cd8b-1408-4681-aaaf-58dcc1af40ff] executing real Dispose(True)
+DEBUG 17 NHibernate.Impl.SessionImpl - closing session
+DEBUG 17 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 12 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 12 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.
+INFO 1 NHibernate.Cfg.Environment - NHibernate 3.1.0.4000 (3.1.0.4000)
+INFO 1 NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+INFO 1 NHibernate.Cfg.Environment - Bytecode provider name : lcg
+INFO 1 NHibernate.Cfg.Environment - Using reflection optimizer
+DEBUG 1 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Group`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" name="Members" table="PersonGroup"><key><column name="Group_id" /></key><many-to-many class="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Person_id" /></many-to-many></bag><property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Name" /></property></class></hibernate-mapping>
+INFO 1 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Group -> Group
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Group.Members -> PersonGroup
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Members, type: System.Collections.Generic.ICollection`1[[Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Group.Members)
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Name -> Name, type: String
+DEBUG 1 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Person`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" inverse="true" name="MemberOfGroups" table="PersonGroup"><key><column name="Person_id" /></key><many-to-many class="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Group_id" /></many-to-many></bag><property name="FirstName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="FirstName" length="25" not-null="false" /></property><property name="LastName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="LastName" length="25" not-null="false" /></property></class></hibernate-mapping>
+INFO 1 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Person -> Person
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Person.MemberOfGroups -> PersonGroup
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: MemberOfGroups, type: System.Collections.Generic.ICollection`1[[Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Person.MemberOfGroups)
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: FirstName -> FirstName, type: String
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: LastName -> LastName, type: String
+INFO 1 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - fetching database metadata
+INFO 1 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 1 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+DEBUG 1 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - updating schema
+INFO 1 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 1 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Group.Members
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Group_id, element: Person_id, type: Person
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Person.MemberOfGroups
+DEBUG 1 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Person_id, element: Group_id, type: Group
+INFO 1 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 1 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 1 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 1 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 1 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Group
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - columns: id, name
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_group
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - table found: main.PersonGroup
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - columns: group_id, person_id
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - indexes: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Person
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - columns: id, firstname, lastname
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 1 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_person
+INFO 1 NHibernate.Tool.hbm2ddl.SchemaUpdate - schema update complete
+DEBUG 1 NHibernate.Connection.ConnectionProvider - Closing connection
+INFO 5 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 5 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+INFO 5 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 5 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 5 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 5 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 5 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 5 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 5 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 5 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 5 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 5 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+INFO 5 NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+INFO 5 NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+INFO 5 NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+INFO 5 NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+INFO 5 NHibernate.Cfg.SettingsFactory - Statistics: disabled
+INFO 5 NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO 5 NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+INFO 5 NHibernate.Cfg.SettingsFactory - Query language substitutions: {'true'='1', 'false'='0'}
+INFO 5 NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+DEBUG 5 NHibernate.Cfg.SettingsFactory - Wrap result sets: disabled
+INFO 5 NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+INFO 5 NHibernate.Cfg.SettingsFactory - Default entity-mode: Poco
+INFO 5 NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+INFO 5 NHibernate.Impl.SessionFactoryImpl - building session factory
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - instantiating session factory with properties: {'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'proxyfactory.factory_class'='NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle', 'connection.driver_class'='NHibernate.Driver.SQLite20Driver, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'query.substitutions'='true=1;false=0', 'connection.connection_string'='Data Source=C:\Users\et36198\Desktop\Gustaf.Lab1.Web\App_Data\mvc3.db;Version=3;New=True;'}
+DEBUG 5 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 5 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 5 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Group
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 5 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 5 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Person
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Group.Members
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Person_id = ? WHERE Group_id = ? AND Person_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Group_id = ? AND Person_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Person.MemberOfGroups
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Person_id, Group_id) VALUES (?, ?)
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Group_id = ? WHERE Person_id = ? AND Group_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Person_id = ? AND Group_id = ?
+DEBUG 5 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Person_id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Group
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Group" WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT group_.Id, group_.Name as Name0_ FROM "Group" group_ WHERE group_.Id=?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Group" (Name, Id) VALUES (?, ?)
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Group" SET Name = ? WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Group" WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Group" (Name) VALUES (?); select last_insert_rowid()
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Person
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Person" WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT person_.Id, person_.FirstName as FirstName2_, person_.LastName as LastName2_ FROM "Person" person_ WHERE person_.Id=?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Person" (FirstName, LastName, Id) VALUES (?, ?, ?)
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Person" SET FirstName = ?, LastName = ? WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Person" WHERE Id = ?
+DEBUG 5 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Person" (FirstName, LastName) VALUES (?, ?); select last_insert_rowid()
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 5 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Group.Members: SELECT members0_.Group_id as Group1_1_, members0_.Person_id as Person2_1_, person1_.Id as Id2_0_, person1_.FirstName as FirstName2_0_, person1_.LastName as LastName2_0_ FROM PersonGroup members0_ left outer join "Person" person1_ on members0_.Person_id=person1_.Id WHERE members0_.Group_id=?
+DEBUG 5 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Person.MemberOfGroups: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 5 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 5 NHibernate.Impl.SessionFactoryObjectFactory - registered: 9ba7ee96110b49b0accf5691d8218046(unnamed)
+INFO 5 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 5 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8aca0bf7-5df2-4fbb-8825-b3557cb5b945] opened session at timestamp: 634746841357, for session factory: [/9ba7ee96110b49b0accf5691d8218046]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8aca0bf7-5df2-4fbb-8825-b3557cb5b945] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8aca0bf7-5df2-4fbb-8825-b3557cb5b945] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=f2dd1285-c2d3-4a72-83d1-b15b8bd57882] opened session at timestamp: 634746841376, for session factory: [/9ba7ee96110b49b0accf5691d8218046]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=f2dd1285-c2d3-4a72-83d1-b15b8bd57882] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=f2dd1285-c2d3-4a72-83d1-b15b8bd57882] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=09c38a12-79d8-4c5f-a499-8a6f1b347d5f] opened session at timestamp: 634746845325, for session factory: [/9ba7ee96110b49b0accf5691d8218046]
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=09c38a12-79d8-4c5f-a499-8a6f1b347d5f] running ISession.Dispose()
+DEBUG 9 NHibernate.Impl.SessionImpl - [session-id=09c38a12-79d8-4c5f-a499-8a6f1b347d5f] executing real Dispose(True)
+DEBUG 9 NHibernate.Impl.SessionImpl - closing session
+DEBUG 9 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=1f57d042-b8b3-4382-a91e-bf380c1a5dcd] opened session at timestamp: 634746845664, for session factory: [/9ba7ee96110b49b0accf5691d8218046]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=1f57d042-b8b3-4382-a91e-bf380c1a5dcd] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=1f57d042-b8b3-4382-a91e-bf380c1a5dcd] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=52c3828b-40d1-4908-b43e-a1551ab32518] opened session at timestamp: 634746845684, for session factory: [/9ba7ee96110b49b0accf5691d8218046]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=52c3828b-40d1-4908-b43e-a1551ab32518] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=52c3828b-40d1-4908-b43e-a1551ab32518] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 6 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 6 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

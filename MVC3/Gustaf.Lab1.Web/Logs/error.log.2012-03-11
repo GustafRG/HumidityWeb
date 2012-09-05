@@ -1,0 +1,260 @@
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.Name as Name2_0_ FROM [Group] group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join [Person] person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.Name as Name2_0_ FROM [Group] group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join [Person] person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Person
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM [Person] WHERE Id = ?
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT person_.Id, person_.Name as Name2_ FROM [Person] person_ WHERE person_.Id=?
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO [Person] (Name, Id) VALUES (?, ?)
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE [Person] SET Name = ? WHERE Id = ?
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM [Person] WHERE Id = ?
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO [Person] (Name) VALUES (?); select SCOPE_IDENTITY()
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.Name as Name2_0_ FROM [Person] person0_ WHERE person0_.Id=?
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.Name as Name2_0_ FROM [Person] person0_ WHERE person0_.Id=?
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.Name as Name2_0_ FROM [Person] person0_ with (updlock, rowlock) WHERE person0_.Id=?
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.Name as Name2_0_ FROM [Person] person0_ with (updlock, rowlock) WHERE person0_.Id=?
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.Name as Name2_0_ FROM [Person] person0_ with (updlock, rowlock) WHERE person0_.Id=?
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.Name as Name2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM [Person] person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join [Group] group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 35 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.Name as Name2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM [Person] person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join [Group] group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 35 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Group.Members: SELECT members0_.Group_id as Group1_1_, members0_.Person_id as Person2_1_, person1_.Id as Id2_0_, person1_.Name as Name2_0_ FROM PersonGroup members0_ left outer join [Person] person1_ on members0_.Person_id=person1_.Id WHERE members0_.Group_id=?
+DEBUG 35 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Person.MemberOfGroups: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 35 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 35 NHibernate.Impl.SessionFactoryObjectFactory - registered: d73eaa2014b44780bdd64584c0d57940(unnamed)
+INFO 35 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 35 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 35 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 35 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 35 NHibernate.Impl.SessionImpl - [session-id=4d5bf6bd-1f88-40d9-a5f6-ef3b61417365] opened session at timestamp: 634671068399, for session factory: [/d73eaa2014b44780bdd64584c0d57940]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Begin (Unspecified)
+DEBUG 35 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - saving transient instance
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - saving [Group#<null>]
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing insertions
+DEBUG 35 NHibernate.Event.Default.WrapVisitor - Wrapped collection in role: Group.Members
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Inserting entity: Group (native id)
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO [Group] (Name) VALUES (?); select SCOPE_IDENTITY()
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [Group#<null>]
+DEBUG 35 NHibernate.Type.StringType - binding 'Co-Workers' to parameter: 0
+DEBUG 35 NHibernate.SQL - INSERT INTO [Group] (Name) VALUES (@p0); select SCOPE_IDENTITY();@p0 = 'Co-Workers' [Type: String (4000)]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 2 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 35 NHibernate.Type.Int32Type - returning '1' as column: 
+DEBUG 35 NHibernate.Id.IdentifierGeneratorFactory - Natively generated identity: 1
+DEBUG 35 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 6 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Person
+DEBUG 35 NHibernate.Engine.IdentifierValue - unsaved-value: 0
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - transient instance of: Person
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - saving transient instance
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - saving [Person#<null>]
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing insertions
+DEBUG 35 NHibernate.Event.Default.WrapVisitor - Wrapped collection in role: Person.MemberOfGroups
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Inserting entity: Person (native id)
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO [Person] (Name) VALUES (?); select SCOPE_IDENTITY()
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [Person#<null>]
+DEBUG 35 NHibernate.Type.StringType - binding 'John' to parameter: 0
+DEBUG 35 NHibernate.SQL - INSERT INTO [Person] (Name) VALUES (@p0); select SCOPE_IDENTITY();@p0 = 'John' [Type: String (25)]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 35 NHibernate.Type.Int32Type - returning '1' as column: 
+DEBUG 35 NHibernate.Id.IdentifierGeneratorFactory - Natively generated identity: 1
+DEBUG 35 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 2 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Group
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - persistent instance of: Group
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - ignoring persistent instance
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Group#1]
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Start Commit
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - flushing session
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - processing flush-time cascades
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Person
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - persistent instance of: Person
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - ignoring persistent instance
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Person#1]
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Group
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - persistent instance of: Group
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - ignoring persistent instance
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Group#1]
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - dirty checking collections
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Flushing entities and processing referenced collections
+DEBUG 35 NHibernate.Engine.Collections - Collection found: [Group.Members#1], was: [<unreferenced>] (initialized)
+DEBUG 35 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#1], was: [<unreferenced>] (initialized)
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Processing unreferenced collections
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Scheduling collection removes/(re)creates/updates
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 2 (re)creations, 0 updates, 0 removals to 2 collections
+DEBUG 35 NHibernate.Impl.Printer - listing entities:
+DEBUG 35 NHibernate.Impl.Printer - Group{'Id'='1', 'Members'='['Person#1']', 'Name'='Co-Workers'}
+DEBUG 35 NHibernate.Impl.Printer - Person{'Id'='1', 'MemberOfGroups'='['Group#1']', 'Name'='John'}
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - executing flush
+DEBUG 35 NHibernate.AdoNet.ConnectionManager - registering flush begin
+DEBUG 35 NHibernate.Persister.Collection.ICollectionPersister - Inserting collection: [Group.Members#1]
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 35 NHibernate.Type.Int32Type - binding '1' to parameter: 0
+DEBUG 35 NHibernate.Type.Int32Type - binding '1' to parameter: 1
+DEBUG 35 NHibernate.SQL - INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1);@p0 = 1 [Type: Int32 (0)], @p1 = 1 [Type: Int32 (0)]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 2 ms
+DEBUG 35 NHibernate.Persister.Collection.ICollectionPersister - done inserting collection: 1 rows inserted
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteBatch for 1 statements took 0 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 35 NHibernate.AdoNet.ConnectionManager - registering flush end
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - post flush
+DEBUG 35 NHibernate.Impl.SessionImpl - before transaction completion
+DEBUG 35 NHibernate.Transaction.AdoTransaction - IDbTransaction Committed
+DEBUG 35 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 35 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 35 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 35 NHibernate.Transaction.AdoTransaction - IDbTransaction disposed.
+DEBUG 35 Gustaf.Lab1.Web.Controllers.HomeController - Persisted Person: John Smith in group Co-Workers
+DEBUG 35 NHibernate.Impl.SessionImpl - [session-id=4d5bf6bd-1f88-40d9-a5f6-ef3b61417365] running ISession.Dispose()
+DEBUG 35 NHibernate.Impl.SessionImpl - [session-id=4d5bf6bd-1f88-40d9-a5f6-ef3b61417365] executing real Dispose(True)
+DEBUG 35 NHibernate.Impl.SessionImpl - closing session
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 35 NHibernate.Impl.SessionImpl - [session-id=d73ad115-c0ce-4e58-8df2-a306c30be5f1] opened session at timestamp: 634671070816, for session factory: [/d73eaa2014b44780bdd64584c0d57940]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Begin (Unspecified)
+DEBUG 35 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - saving transient instance
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - saving [Group#<null>]
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing insertions
+DEBUG 35 NHibernate.Event.Default.WrapVisitor - Wrapped collection in role: Group.Members
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Inserting entity: Group (native id)
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO [Group] (Name) VALUES (?); select SCOPE_IDENTITY()
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [Group#<null>]
+DEBUG 35 NHibernate.Type.StringType - binding 'Co-Workers' to parameter: 0
+DEBUG 35 NHibernate.SQL - INSERT INTO [Group] (Name) VALUES (@p0); select SCOPE_IDENTITY();@p0 = 'Co-Workers' [Type: String (4000)]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 35 NHibernate.Type.Int32Type - returning '2' as column: 
+DEBUG 35 NHibernate.Id.IdentifierGeneratorFactory - Natively generated identity: 2
+DEBUG 35 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Person
+DEBUG 35 NHibernate.Engine.IdentifierValue - unsaved-value: 0
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - transient instance of: Person
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - saving transient instance
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - saving [Person#<null>]
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing insertions
+DEBUG 35 NHibernate.Event.Default.WrapVisitor - Wrapped collection in role: Person.MemberOfGroups
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Inserting entity: Person (native id)
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO [Person] (Name) VALUES (?); select SCOPE_IDENTITY()
+DEBUG 35 NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [Person#<null>]
+DEBUG 35 NHibernate.Type.StringType - binding 'John' to parameter: 0
+DEBUG 35 NHibernate.SQL - INSERT INTO [Person] (Name) VALUES (@p0); select SCOPE_IDENTITY();@p0 = 'John' [Type: String (25)]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 35 NHibernate.Type.Int32Type - returning '2' as column: 
+DEBUG 35 NHibernate.Id.IdentifierGeneratorFactory - Natively generated identity: 2
+DEBUG 35 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Group
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - persistent instance of: Group
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - ignoring persistent instance
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Group#2]
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Start Commit
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - flushing session
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - processing flush-time cascades
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Person
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - persistent instance of: Person
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - ignoring persistent instance
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Person#2]
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 35 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+INFO 35 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+DEBUG 35 NHibernate.Engine.CascadingAction - cascading to saveOrUpdate: Group
+DEBUG 35 NHibernate.Event.Default.AbstractSaveEventListener - persistent instance of: Group
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - ignoring persistent instance
+DEBUG 35 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Group#2]
+INFO 35 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Person.MemberOfGroups
+INFO 35 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Person
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - dirty checking collections
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Flushing entities and processing referenced collections
+DEBUG 35 NHibernate.Engine.Collections - Collection found: [Group.Members#2], was: [<unreferenced>] (initialized)
+DEBUG 35 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#2], was: [<unreferenced>] (initialized)
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Processing unreferenced collections
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Scheduling collection removes/(re)creates/updates
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 2 (re)creations, 0 updates, 0 removals to 2 collections
+DEBUG 35 NHibernate.Impl.Printer - listing entities:
+DEBUG 35 NHibernate.Impl.Printer - Group{'Id'='2', 'Members'='['Person#2']', 'Name'='Co-Workers'}
+DEBUG 35 NHibernate.Impl.Printer - Person{'Id'='2', 'MemberOfGroups'='['Group#2']', 'Name'='John'}
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - executing flush
+DEBUG 35 NHibernate.AdoNet.ConnectionManager - registering flush begin
+DEBUG 35 NHibernate.Persister.Collection.ICollectionPersister - Inserting collection: [Group.Members#2]
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 35 NHibernate.Type.Int32Type - binding '2' to parameter: 0
+DEBUG 35 NHibernate.Type.Int32Type - binding '2' to parameter: 1
+DEBUG 35 NHibernate.SQL - INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1);@p0 = 2 [Type: Int32 (0)], @p1 = 2 [Type: Int32 (0)]
+DEBUG 35 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 0 ms
+DEBUG 35 NHibernate.Persister.Collection.ICollectionPersister - done inserting collection: 1 rows inserted
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - ExecuteBatch for 1 statements took 0 ms
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 35 NHibernate.AdoNet.ConnectionManager - registering flush end
+DEBUG 35 NHibernate.Event.Default.AbstractFlushingEventListener - post flush
+DEBUG 35 NHibernate.Impl.SessionImpl - before transaction completion
+DEBUG 35 NHibernate.Transaction.AdoTransaction - IDbTransaction Committed
+DEBUG 35 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 35 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 35 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 35 NHibernate.Transaction.AdoTransaction - IDbTransaction disposed.
+DEBUG 35 Gustaf.Lab1.Web.Controllers.HomeController - Persisted Person: John Smith in group Co-Workers
+DEBUG 35 NHibernate.Impl.SessionImpl - [session-id=d73ad115-c0ce-4e58-8df2-a306c30be5f1] running ISession.Dispose()
+DEBUG 35 NHibernate.Impl.SessionImpl - [session-id=d73ad115-c0ce-4e58-8df2-a306c30be5f1] executing real Dispose(True)
+DEBUG 35 NHibernate.Impl.SessionImpl - closing session
+DEBUG 35 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)

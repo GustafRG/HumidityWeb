@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using( Html.BeginForm() )
+{
+    <input type="button" class="button"  value="Add" />
+    <div id="Temperature" style="display:none">
+    </div>
+    <div id="Humidity" style="display:none">
+    </div>
+    
+    <script type="text/javascript">
+        $(function (e) {
+            $(".button").click(function () {
+                newPerson();
+            });
+        });
+        function newPerson() {
+            $.getJSON("Netduino/ReadSHT15", null, updateFields);
+        };
+
+        updateFields = function (data) {
+            $("#Temperature").html("Temperature: " + data.Temperature);
+            $("#Temperature").fadeIn();
+            $("#Humidity").html("Humidity: " + data.Humidity);
+            $("#Humidity").fadeIn();
+        };
+</script>
+}

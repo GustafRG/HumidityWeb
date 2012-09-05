@@ -1,0 +1,24 @@
+DEBUG 7 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Group.Members#2]] located in load context
+DEBUG 7 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#2]
+DEBUG 7 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#2]
+DEBUG 7 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#2]] in any result-set context
+DEBUG 7 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#2]] not located in load context
+DEBUG 7 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#2]>@1f69d36]
+DEBUG 7 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 7 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#2]>@1f69d36]
+DEBUG 7 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#2]
+DEBUG 7 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 7 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 7 NHibernate.Loader.Loader - done loading collection
+DEBUG 7 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 7 NHibernate.Impl.SessionImpl - [session-id=49f0e839-90c1-4f9a-917f-da39383ea7d5] running ISession.Dispose()
+DEBUG 7 NHibernate.Impl.SessionImpl - [session-id=49f0e839-90c1-4f9a-917f-da39383ea7d5] executing real Dispose(True)
+DEBUG 7 NHibernate.Impl.SessionImpl - closing session
+DEBUG 7 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 7 NHibernate.Impl.SessionImpl - [session-id=c254312d-fbf8-421e-b8c3-5ebb2380dd2e] opened session at timestamp: 634697817034, for session factory: [/433f0ed2a0474e50b7c969e7994d8b21]
+DEBUG 7 NHibernate.Impl.SessionImpl - [session-id=c254312d-fbf8-421e-b8c3-5ebb2380dd2e] running ISession.Dispose()
+DEBUG 7 NHibernate.Impl.SessionImpl - [session-id=c254312d-fbf8-421e-b8c3-5ebb2380dd2e] executing real Dispose(True)
+DEBUG 7 NHibernate.Impl.SessionImpl - closing session
+DEBUG 7 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 27 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 27 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

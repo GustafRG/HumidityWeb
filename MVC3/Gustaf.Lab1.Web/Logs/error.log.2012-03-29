@@ -1,0 +1,118 @@
+DEBUG 13 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - object already associated with session: [Person#30]
+INFO 13 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 13 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 13 NHibernate.Engine.Cascade - processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+INFO 13 NHibernate.Engine.Cascade - cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 13 NHibernate.Engine.Cascade - done cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for collection: Group.Members
+INFO 13 NHibernate.Engine.Cascade - done processing cascade NHibernate.Engine.CascadingAction+SaveUpdateCascadingAction for: Group
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - dirty checking collections
+DEBUG 13 NHibernate.Engine.CollectionEntry - Collection dirty: [Person.MemberOfGroups#30]
+DEBUG 13 NHibernate.Engine.CollectionEntry - Collection dirty: [Group.Members#2]
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - Flushing entities and processing referenced collections
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#1], was: [Person.MemberOfGroups#1] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#2], was: [Person.MemberOfGroups#2] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#3], was: [Person.MemberOfGroups#3] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#4], was: [Person.MemberOfGroups#4] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#5], was: [Person.MemberOfGroups#5] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#6], was: [Person.MemberOfGroups#6] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#7], was: [Person.MemberOfGroups#7] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#8], was: [Person.MemberOfGroups#8] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#9], was: [Person.MemberOfGroups#9] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#10], was: [Person.MemberOfGroups#10] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#11], was: [Person.MemberOfGroups#11] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#12], was: [Person.MemberOfGroups#12] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#13], was: [Person.MemberOfGroups#13] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#14], was: [Person.MemberOfGroups#14] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#15], was: [Person.MemberOfGroups#15] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#16], was: [Person.MemberOfGroups#16] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#17], was: [Person.MemberOfGroups#17] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#18], was: [Person.MemberOfGroups#18] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#19], was: [Person.MemberOfGroups#19] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#20], was: [Person.MemberOfGroups#20] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#21], was: [Person.MemberOfGroups#21] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#22], was: [Person.MemberOfGroups#22] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#23], was: [Person.MemberOfGroups#23] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#24], was: [Person.MemberOfGroups#24] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#25], was: [Person.MemberOfGroups#25] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#26], was: [Person.MemberOfGroups#26] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#27], was: [Person.MemberOfGroups#27] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#28], was: [Person.MemberOfGroups#28] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#29], was: [Person.MemberOfGroups#29] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Person.MemberOfGroups#30], was: [Person.MemberOfGroups#30] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Group.Members#1], was: [Group.Members#1] (uninitialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Group.Members#2], was: [Group.Members#2] (initialized)
+DEBUG 13 NHibernate.Engine.Collections - Collection found: [Group.Members#3], was: [Group.Members#3] (uninitialized)
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - Processing unreferenced collections
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - Scheduling collection removes/(re)creates/updates
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 33 objects
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 (re)creations, 2 updates, 0 removals to 33 collections
+DEBUG 13 NHibernate.Impl.Printer - listing entities:
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='1', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Johnson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='2', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Alexander', 'LastName'='Wagner'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='3', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Gustaf', 'LastName'='Rylander'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='4', 'MemberOfGroups'='<uninitialized>', 'FirstName'='John', 'LastName'='Doe'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='5', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Mr.', 'LastName'='Smith'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='6', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Michael', 'LastName'='Andersson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='7', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Johnsson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='8', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Johnsson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='9', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Doe'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='10', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Doe'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='11', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Michael', 'LastName'='Andersson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='12', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Smith'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='13', 'MemberOfGroups'='<uninitialized>', 'FirstName'='John', 'LastName'='Johnsson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='14', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Doe'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='15', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Mr.', 'LastName'='Andersson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='16', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Alexander', 'LastName'='Johnson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='17', 'MemberOfGroups'='<uninitialized>', 'FirstName'='asdfas', 'LastName'=null}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='18', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Gustaf', 'LastName'='Rylander'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='19', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Alexander', 'LastName'='Johnson'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='20', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Fred', 'LastName'='Wagner'}
+DEBUG 13 NHibernate.Impl.Printer - Person{'Id'='21', 'MemberOfGroups'='<uninitialized>', 'FirstName'='Lars', 'LastName'='Rylander'}
+DEBUG 13 NHibernate.Impl.Printer - more......
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - executing flush
+DEBUG 13 NHibernate.AdoNet.ConnectionManager - registering flush begin
+DEBUG 13 NHibernate.Persister.Collection.ICollectionPersister - Deleting collection: [Group.Members#2]
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 13 NHibernate.SQL - DELETE FROM PersonGroup WHERE Group_id = @p0;@p0 = 2 [Type: Int32 (0)]
+DEBUG 13 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 1 ms
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 13 NHibernate.Persister.Collection.ICollectionPersister - done deleting collection
+DEBUG 13 NHibernate.Persister.Collection.ICollectionPersister - Inserting collection: [Group.Members#2]
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 13 NHibernate.SQL - INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1);@p0 = 2 [Type: Int32 (0)], @p1 = 1 [Type: Int32 (0)]
+DEBUG 13 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 3 ms
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - reusing command INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1)
+DEBUG 13 NHibernate.SQL - INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1);@p0 = 2 [Type: Int32 (0)], @p1 = 2 [Type: Int32 (0)]
+DEBUG 13 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 0 ms
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - reusing command INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1)
+DEBUG 13 NHibernate.SQL - INSERT INTO PersonGroup (Group_id, Person_id) VALUES (@p0, @p1);@p0 = 2 [Type: Int32 (0)], @p1 = 30 [Type: Int32 (0)]
+DEBUG 13 NHibernate.Transaction.AdoTransaction - Enlist Command
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 0 ms
+DEBUG 13 NHibernate.Persister.Collection.ICollectionPersister - done inserting collection: 3 rows inserted
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - ExecuteBatch for 1 statements took 0 ms
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 13 NHibernate.AdoNet.ConnectionManager - registering flush end
+DEBUG 13 NHibernate.Event.Default.AbstractFlushingEventListener - post flush
+DEBUG 13 NHibernate.Impl.SessionImpl - before transaction completion
+DEBUG 13 NHibernate.Transaction.AdoTransaction - IDbTransaction Committed
+DEBUG 13 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 13 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 13 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 13 NHibernate.Transaction.AdoTransaction - IDbTransaction disposed.
+DEBUG 13 Gustaf.Lab1.Web.Repositories.Repository - Persisted Updated Group, added Fred Gerdeman to GroupCo-workers
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f1ae797c-5a49-45ec-9544-908a65c1bd02] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f1ae797c-5a49-45ec-9544-908a65c1bd02] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 18 NHibernate.Impl.SessionImpl - [session-id=ec98c2bc-ef5d-4724-aac1-21e09da86472] opened session at timestamp: 634686559981, for session factory: [/1d8b878fd62c4b31a7cee52b5a6e94a2]
+DEBUG 18 NHibernate.Impl.SessionImpl - [session-id=ec98c2bc-ef5d-4724-aac1-21e09da86472] running ISession.Dispose()
+DEBUG 18 NHibernate.Impl.SessionImpl - [session-id=ec98c2bc-ef5d-4724-aac1-21e09da86472] executing real Dispose(True)
+DEBUG 18 NHibernate.Impl.SessionImpl - closing session
+DEBUG 18 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 19 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 19 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

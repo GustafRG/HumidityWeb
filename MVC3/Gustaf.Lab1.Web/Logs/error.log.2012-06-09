@@ -1,0 +1,536 @@
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Group.Members#2]] located in load context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#2]
+DEBUG 12 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#2]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#2]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#2]] not located in load context
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#2]>@3a062d5]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#2]>@3a062d5]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#2]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 12 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 12 NHibernate.Loader.Loader - done loading collection
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#3]
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 12 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#3]
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 12 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 3 -> [0]
+DEBUG 12 NHibernate.Type.Int32Type - binding '3' to parameter: 0
+INFO 12 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 12 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 3 [Type: Int32 (0)]
+DEBUG 12 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 12 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#3]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#3]]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#3]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#3]] located in load context
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 12 NHibernate.Loader.Loader - processing result set
+DEBUG 12 NHibernate.Loader.Loader - result set row: 0
+DEBUG 12 NHibernate.Type.Int32Type - returning '2' as column: Id0_0_
+DEBUG 12 NHibernate.Loader.Loader - result row: EntityKey[Group#2]
+DEBUG 12 NHibernate.Type.Int32Type - returning '3' as column: Person2_1_
+DEBUG 12 NHibernate.Loader.Loader - found row of collection: [Person.MemberOfGroups#3]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#3]]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#3]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#3]] not located in load context
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 12 NHibernate.Type.Int32Type - returning '2' as column: Group1_1_
+DEBUG 12 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [Group#2]
+DEBUG 12 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [Group#2]
+DEBUG 12 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [Group#2]
+DEBUG 12 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 12 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 5 ms
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 12 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 12 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 12 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#3]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#3]] not located in load context
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#3]>@11ad9f3]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#3]>@11ad9f3]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#3]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 12 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 12 NHibernate.Loader.Loader - done loading collection
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#4]
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 12 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#4]
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 12 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 4 -> [0]
+DEBUG 12 NHibernate.Type.Int32Type - binding '4' to parameter: 0
+INFO 12 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 12 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 4 [Type: Int32 (0)]
+DEBUG 12 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 12 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#4]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#4]]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#4]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#4]] located in load context
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 12 NHibernate.Loader.Loader - processing result set
+DEBUG 12 NHibernate.Loader.Loader - result set row: 0
+DEBUG 12 NHibernate.Type.Int32Type - returning '3' as column: Id0_0_
+DEBUG 12 NHibernate.Loader.Loader - result row: EntityKey[Group#3]
+DEBUG 12 NHibernate.Loader.Loader - Initializing object from DataReader: [Group#3]
+DEBUG 12 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Group#3]
+DEBUG 12 NHibernate.Type.StringType - returning 'MVC-Ninjahz' as column: Name0_0_
+DEBUG 12 NHibernate.Type.Int32Type - returning '4' as column: Person2_1_
+DEBUG 12 NHibernate.Loader.Loader - found row of collection: [Person.MemberOfGroups#4]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#4]]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#4]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#4]] not located in load context
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 12 NHibernate.Type.Int32Type - returning '3' as column: Group1_1_
+DEBUG 12 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [Group#3]
+DEBUG 12 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [Group#3]
+DEBUG 12 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [Group#3]
+DEBUG 12 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 12 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 12 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 12 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 12 NHibernate.Loader.Loader - total objects hydrated: 1
+DEBUG 12 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Group#3]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Group.Members#3]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Group.Members#3]] located in load context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#3]
+DEBUG 12 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#3]
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#4]] in any result-set context
+DEBUG 12 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#4]] not located in load context
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#4]>@3527820]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#4]>@3527820]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#4]
+DEBUG 12 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 12 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 12 NHibernate.Loader.Loader - done loading collection
+DEBUG 12 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 12 NHibernate.Impl.SessionImpl - [session-id=731dab98-d22f-4505-b740-83362260d9f7] running ISession.Dispose()
+DEBUG 12 NHibernate.Impl.SessionImpl - [session-id=731dab98-d22f-4505-b740-83362260d9f7] executing real Dispose(True)
+DEBUG 12 NHibernate.Impl.SessionImpl - closing session
+DEBUG 12 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=2fec4097-01a8-4764-9139-d86086ba3a3d] opened session at timestamp: 634748747880, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=2fec4097-01a8-4764-9139-d86086ba3a3d] running ISession.Dispose()
+DEBUG 15 NHibernate.Impl.SessionImpl - [session-id=2fec4097-01a8-4764-9139-d86086ba3a3d] executing real Dispose(True)
+DEBUG 15 NHibernate.Impl.SessionImpl - closing session
+DEBUG 15 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=578d6cb6-e3f4-435c-9e15-756cdd9ba967] opened session at timestamp: 634748750329, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=578d6cb6-e3f4-435c-9e15-756cdd9ba967] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=578d6cb6-e3f4-435c-9e15-756cdd9ba967] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 19 NHibernate.Impl.SessionImpl - [session-id=7a89687c-eba6-492b-8d84-bd01495b16ec] opened session at timestamp: 634748750357, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 19 NHibernate.Impl.SessionImpl - [session-id=7a89687c-eba6-492b-8d84-bd01495b16ec] running ISession.Dispose()
+DEBUG 19 NHibernate.Impl.SessionImpl - [session-id=7a89687c-eba6-492b-8d84-bd01495b16ec] executing real Dispose(True)
+DEBUG 19 NHibernate.Impl.SessionImpl - closing session
+DEBUG 19 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=75189329-be5b-4474-a53b-c3a43130f96b] opened session at timestamp: 634748753774, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=75189329-be5b-4474-a53b-c3a43130f96b] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=75189329-be5b-4474-a53b-c3a43130f96b] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=a3a03437-5664-4149-b680-e4f349cf984b] opened session at timestamp: 634748754236, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=a3a03437-5664-4149-b680-e4f349cf984b] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=a3a03437-5664-4149-b680-e4f349cf984b] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=abb2f463-efe7-435b-a2f2-4b4e98ab703a] opened session at timestamp: 634748754615, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=abb2f463-efe7-435b-a2f2-4b4e98ab703a] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=abb2f463-efe7-435b-a2f2-4b4e98ab703a] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=8a32ed8f-4ebc-4a2a-90a8-09847889b440] opened session at timestamp: 634748754629, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=8a32ed8f-4ebc-4a2a-90a8-09847889b440] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=8a32ed8f-4ebc-4a2a-90a8-09847889b440] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=a4bb53fe-b0ec-4d4b-9be5-6527cf9126d5] opened session at timestamp: 634748758325, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=a4bb53fe-b0ec-4d4b-9be5-6527cf9126d5] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=a4bb53fe-b0ec-4d4b-9be5-6527cf9126d5] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=02bcc6b7-0ba5-402b-a1c1-a2541e88dfab] opened session at timestamp: 634748758356, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=02bcc6b7-0ba5-402b-a1c1-a2541e88dfab] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=02bcc6b7-0ba5-402b-a1c1-a2541e88dfab] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=408ebb9a-b165-41d9-8dfd-81ac84f991eb] opened session at timestamp: 634748758364, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=408ebb9a-b165-41d9-8dfd-81ac84f991eb] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=408ebb9a-b165-41d9-8dfd-81ac84f991eb] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=dedecd62-56a4-4f09-bd61-08550135bf3c] opened session at timestamp: 634748758367, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=dedecd62-56a4-4f09-bd61-08550135bf3c] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=dedecd62-56a4-4f09-bd61-08550135bf3c] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=4d2bcb6a-54f6-4074-a350-7ca799f1cdd4] opened session at timestamp: 634748758370, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=4d2bcb6a-54f6-4074-a350-7ca799f1cdd4] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=4d2bcb6a-54f6-4074-a350-7ca799f1cdd4] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=1234af5a-cde0-438f-a7c8-7198ed105e6b] opened session at timestamp: 634748758371, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=1234af5a-cde0-438f-a7c8-7198ed105e6b] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=1234af5a-cde0-438f-a7c8-7198ed105e6b] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=22ec92cd-7076-4114-8f8a-9c0ff83d8006] opened session at timestamp: 634748758495, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=22ec92cd-7076-4114-8f8a-9c0ff83d8006] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=22ec92cd-7076-4114-8f8a-9c0ff83d8006] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=f6a60cc9-7f1c-468e-b0a9-b7f789ae89dd] opened session at timestamp: 634748758506, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=f6a60cc9-7f1c-468e-b0a9-b7f789ae89dd] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=f6a60cc9-7f1c-468e-b0a9-b7f789ae89dd] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=a5f57845-026d-4530-a4a3-1b7facd128bf] opened session at timestamp: 634748758509, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=a5f57845-026d-4530-a4a3-1b7facd128bf] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=a5f57845-026d-4530-a4a3-1b7facd128bf] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=bd671824-2d1c-4d22-ab9a-600b326c5eff] opened session at timestamp: 634748758510, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=bd671824-2d1c-4d22-ab9a-600b326c5eff] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=bd671824-2d1c-4d22-ab9a-600b326c5eff] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=b45db511-aec7-4d86-9382-8f4e0426a982] opened session at timestamp: 634748758511, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=b45db511-aec7-4d86-9382-8f4e0426a982] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=b45db511-aec7-4d86-9382-8f4e0426a982] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=1542264e-7b77-49d7-b42a-bc8648f3971d] opened session at timestamp: 634748758513, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=1542264e-7b77-49d7-b42a-bc8648f3971d] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=1542264e-7b77-49d7-b42a-bc8648f3971d] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=38d8e668-f39d-4b5b-b16f-375f60400555] opened session at timestamp: 634748758514, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=38d8e668-f39d-4b5b-b16f-375f60400555] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=38d8e668-f39d-4b5b-b16f-375f60400555] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=52e16cb2-352b-4073-a7f2-3a7e523d78d4] opened session at timestamp: 634748758516, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=52e16cb2-352b-4073-a7f2-3a7e523d78d4] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=52e16cb2-352b-4073-a7f2-3a7e523d78d4] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=52b717a6-30b3-4a76-ad9b-2a4be32d068a] opened session at timestamp: 634748758516, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=52b717a6-30b3-4a76-ad9b-2a4be32d068a] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=52b717a6-30b3-4a76-ad9b-2a4be32d068a] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=2d76c0ac-8cc3-4a97-bed6-666f5017a319] opened session at timestamp: 634748758519, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=2d76c0ac-8cc3-4a97-bed6-666f5017a319] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=2d76c0ac-8cc3-4a97-bed6-666f5017a319] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=0efd0e59-f5d5-4b8a-8643-b9b0b85c3fd6] opened session at timestamp: 634748758521, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=0efd0e59-f5d5-4b8a-8643-b9b0b85c3fd6] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=0efd0e59-f5d5-4b8a-8643-b9b0b85c3fd6] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=5a5c2f51-983b-4352-9573-0102a16c6436] opened session at timestamp: 634748758522, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=5a5c2f51-983b-4352-9573-0102a16c6436] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=5a5c2f51-983b-4352-9573-0102a16c6436] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=680798b8-1bff-429b-82cc-eca082a0bf0e] opened session at timestamp: 634748758524, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=680798b8-1bff-429b-82cc-eca082a0bf0e] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=680798b8-1bff-429b-82cc-eca082a0bf0e] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=d0f56936-0149-4b47-8ed8-7385c65e65af] opened session at timestamp: 634748758764, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=d0f56936-0149-4b47-8ed8-7385c65e65af] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=d0f56936-0149-4b47-8ed8-7385c65e65af] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=116551b3-fd72-43fd-9b00-256c8b5ce009] opened session at timestamp: 634748761867, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=116551b3-fd72-43fd-9b00-256c8b5ce009] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=116551b3-fd72-43fd-9b00-256c8b5ce009] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=326dfb97-160f-4301-bec0-bef1930f1359] opened session at timestamp: 634748762731, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=326dfb97-160f-4301-bec0-bef1930f1359] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=326dfb97-160f-4301-bec0-bef1930f1359] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=72321d8c-0f68-4652-8a12-d22c9cb39fe4] opened session at timestamp: 634748762746, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=72321d8c-0f68-4652-8a12-d22c9cb39fe4] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=72321d8c-0f68-4652-8a12-d22c9cb39fe4] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=6e728c2b-d1f8-4a92-85b7-82ed7d9ab3b3] opened session at timestamp: 634748762748, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=6e728c2b-d1f8-4a92-85b7-82ed7d9ab3b3] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=6e728c2b-d1f8-4a92-85b7-82ed7d9ab3b3] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=b1505e1e-7469-49c9-9eff-d701e88ab1e5] opened session at timestamp: 634748762750, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=b1505e1e-7469-49c9-9eff-d701e88ab1e5] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=b1505e1e-7469-49c9-9eff-d701e88ab1e5] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=220e07af-622c-4a9b-9f5a-e217c68d7696] opened session at timestamp: 634748762825, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=220e07af-622c-4a9b-9f5a-e217c68d7696] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=220e07af-622c-4a9b-9f5a-e217c68d7696] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=fdbcff4a-8a19-41ee-a952-37035e983ddf] opened session at timestamp: 634748763121, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=fdbcff4a-8a19-41ee-a952-37035e983ddf] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=fdbcff4a-8a19-41ee-a952-37035e983ddf] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=8dd44b43-78c0-4232-ba01-f9c0220c56c3] opened session at timestamp: 634748763134, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=8dd44b43-78c0-4232-ba01-f9c0220c56c3] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=8dd44b43-78c0-4232-ba01-f9c0220c56c3] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=c5729e6f-627f-48ee-b169-49820c12980f] opened session at timestamp: 634748763136, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=c5729e6f-627f-48ee-b169-49820c12980f] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=c5729e6f-627f-48ee-b169-49820c12980f] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=c6793bee-02dc-4791-aa8d-a4b723cd7655] opened session at timestamp: 634748763137, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=c6793bee-02dc-4791-aa8d-a4b723cd7655] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=c6793bee-02dc-4791-aa8d-a4b723cd7655] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=a2c072d7-5ebc-40a7-85d8-780a2e13f4be] opened session at timestamp: 634748763139, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=a2c072d7-5ebc-40a7-85d8-780a2e13f4be] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=a2c072d7-5ebc-40a7-85d8-780a2e13f4be] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=2a083be3-1d11-4bc2-b523-60f3d3646b93] opened session at timestamp: 634748763140, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=2a083be3-1d11-4bc2-b523-60f3d3646b93] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=2a083be3-1d11-4bc2-b523-60f3d3646b93] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=17d21335-f187-4a20-acd0-f4a05001000a] opened session at timestamp: 634748763142, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=17d21335-f187-4a20-acd0-f4a05001000a] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=17d21335-f187-4a20-acd0-f4a05001000a] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=51736d5b-cfb8-4409-bd9e-789036c42244] opened session at timestamp: 634748764216, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=51736d5b-cfb8-4409-bd9e-789036c42244] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=51736d5b-cfb8-4409-bd9e-789036c42244] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=d4283c73-8c3a-4297-b44d-a14a8b82885d] opened session at timestamp: 634748764436, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=d4283c73-8c3a-4297-b44d-a14a8b82885d] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=d4283c73-8c3a-4297-b44d-a14a8b82885d] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=8c101e95-b10b-4dd0-8264-20f42c159d87] opened session at timestamp: 634748764450, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=8c101e95-b10b-4dd0-8264-20f42c159d87] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=8c101e95-b10b-4dd0-8264-20f42c159d87] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=9192699e-2508-490e-a108-c225a205c7d2] opened session at timestamp: 634748764594, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=9192699e-2508-490e-a108-c225a205c7d2] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=9192699e-2508-490e-a108-c225a205c7d2] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=2b80178d-1060-4b8f-8a4a-5f989e2cb1ec] opened session at timestamp: 634748764605, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=2b80178d-1060-4b8f-8a4a-5f989e2cb1ec] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=2b80178d-1060-4b8f-8a4a-5f989e2cb1ec] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=5f1f1e7e-a380-4121-975a-a839bd918e55] opened session at timestamp: 634748764608, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=5f1f1e7e-a380-4121-975a-a839bd918e55] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=5f1f1e7e-a380-4121-975a-a839bd918e55] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=fe5da9cf-78d7-40a8-b9bb-0d47e7363f34] opened session at timestamp: 634748764609, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=fe5da9cf-78d7-40a8-b9bb-0d47e7363f34] running ISession.Dispose()
+DEBUG 20 NHibernate.Impl.SessionImpl - [session-id=fe5da9cf-78d7-40a8-b9bb-0d47e7363f34] executing real Dispose(True)
+DEBUG 20 NHibernate.Impl.SessionImpl - closing session
+DEBUG 20 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=c1390fec-3db6-4ad8-92a3-e5d1981db2b8] opened session at timestamp: 634748764611, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=c1390fec-3db6-4ad8-92a3-e5d1981db2b8] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=c1390fec-3db6-4ad8-92a3-e5d1981db2b8] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=aae32358-0ad8-480e-94fd-c75369c3ef92] opened session at timestamp: 634748764611, for session factory: [/202a23c0b4fb4e53bbeaa84cc1a33814]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=aae32358-0ad8-480e-94fd-c75369c3ef92] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=aae32358-0ad8-480e-94fd-c75369c3ef92] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 24 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 24 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.
+INFO 14 NHibernate.Cfg.Environment - NHibernate 3.1.0.4000 (3.1.0.4000)
+INFO 14 NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+INFO 14 NHibernate.Cfg.Environment - Bytecode provider name : lcg
+INFO 14 NHibernate.Cfg.Environment - Using reflection optimizer
+DEBUG 14 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Group`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" name="Members" table="PersonGroup"><key><column name="Group_id" /></key><many-to-many class="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Person_id" /></many-to-many></bag><property name="Name" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Name" /></property></class></hibernate-mapping>
+INFO 14 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Group -> Group
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Group.Members -> PersonGroup
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Members, type: System.Collections.Generic.ICollection`1[[Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Group.Members)
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Name -> Name, type: String
+DEBUG 14 NHibernate.Cfg.Configuration - Mapping XML:
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"><class xmlns="urn:nhibernate-mapping-2.2" name="Person, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" table="`Person`"><id access="backfield" name="Id" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="Id" /><generator class="identity" /></id><bag cascade="all" inverse="true" name="MemberOfGroups" table="PersonGroup"><key><column name="Person_id" /></key><many-to-many class="Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"><column name="Group_id" /></many-to-many></bag><property name="FirstName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="FirstName" length="25" not-null="false" /></property><property name="LastName" type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><column name="LastName" length="25" not-null="false" /></property></class></hibernate-mapping>
+INFO 14 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: Person -> Person
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: Id -> Id, type: Int32
+INFO 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapping collection: Person.MemberOfGroups -> PersonGroup
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: MemberOfGroups, type: System.Collections.Generic.ICollection`1[[Group, Gustaf.Lab1.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]](Person.MemberOfGroups)
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: FirstName -> FirstName, type: String
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped property: LastName -> LastName, type: String
+INFO 14 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 14 NHibernate.Tool.hbm2ddl.SchemaUpdate - Running hbm2ddl schema update
+INFO 14 NHibernate.Tool.hbm2ddl.SchemaUpdate - fetching database metadata
+INFO 14 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 14 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+DEBUG 14 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+INFO 14 NHibernate.Tool.hbm2ddl.SchemaUpdate - updating schema
+INFO 14 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 14 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Group.Members
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Group_id, element: Person_id, type: Person
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Person.MemberOfGroups
+DEBUG 14 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Person_id, element: Group_id, type: Group
+INFO 14 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 14 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 14 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 14 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 14 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Group
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - columns: id, name
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_group
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - table found: main.PersonGroup
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - columns: group_id, person_id
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - indexes: 
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - table found: main.Person
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - columns: id, firstname, lastname
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - foreign keys: 
+INFO 14 NHibernate.Dialect.Schema.ITableMetadata - indexes: sqlite_master_pk_person
+INFO 14 NHibernate.Tool.hbm2ddl.SchemaUpdate - schema update complete
+DEBUG 14 NHibernate.Connection.ConnectionProvider - Closing connection
+INFO 24 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 24 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+INFO 24 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 24 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 24 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 24 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 24 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 24 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 24 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 24 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 24 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 24 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+INFO 24 NHibernate.Cfg.SettingsFactory - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+INFO 24 NHibernate.Cfg.SettingsFactory - Optimize cache for minimal puts: False
+INFO 24 NHibernate.Cfg.SettingsFactory - Connection release mode: auto
+INFO 24 NHibernate.Cfg.SettingsFactory - Default batch fetch size: 1
+INFO 24 NHibernate.Cfg.SettingsFactory - Statistics: disabled
+INFO 24 NHibernate.Cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+INFO 24 NHibernate.Cfg.SettingsFactory - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+INFO 24 NHibernate.Cfg.SettingsFactory - Query language substitutions: {'true'='1', 'false'='0'}
+INFO 24 NHibernate.Cfg.SettingsFactory - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+DEBUG 24 NHibernate.Cfg.SettingsFactory - Wrap result sets: disabled
+INFO 24 NHibernate.Cfg.SettingsFactory - Batcher factory: NHibernate.AdoNet.NonBatchingBatcherFactory, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+INFO 24 NHibernate.Cfg.SettingsFactory - Default entity-mode: Poco
+INFO 24 NHibernate.Cfg.SettingsFactory - Named query checking : enabled
+INFO 24 NHibernate.Impl.SessionFactoryImpl - building session factory
+DEBUG 24 NHibernate.Impl.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG 24 NHibernate.Impl.SessionFactoryImpl - instantiating session factory with properties: {'connection.provider'='NHibernate.Connection.DriverConnectionProvider', 'proxyfactory.factory_class'='NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle', 'connection.driver_class'='NHibernate.Driver.SQLite20Driver, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'hibernate.dialect'='NHibernate.Dialect.SQLiteDialect, NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4', 'query.substitutions'='true=1;false=0', 'connection.connection_string'='Data Source=C:\Users\Gustaf\Desktop\MVC3\Gustaf.Lab1.Web\App_Data\mvc3.db;Version=3;New=True;'}
+DEBUG 24 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 24 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 24 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 24 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Group
+DEBUG 24 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Group
+DEBUG 24 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 24 NHibernate.Tuple.Entity.AbstractEntityTuplizer - No custom accessors found for entity: Person
+DEBUG 24 NHibernate.Tuple.Entity.PocoEntityTuplizer - Create Instantiator using optimizer for:Person
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Group.Members
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Group_id, Person_id) VALUES (?, ?)
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Person_id = ? WHERE Group_id = ? AND Person_id = ?
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Group_id = ? AND Person_id = ?
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Group_id = ?
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister - Static SQL for collection: Person.MemberOfGroups
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  Row insert: INSERT INTO PersonGroup (Person_id, Group_id) VALUES (?, ?)
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  Row update: UPDATE PersonGroup SET Group_id = ? WHERE Person_id = ? AND Group_id = ?
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  Row delete: DELETE FROM PersonGroup WHERE Person_id = ? AND Group_id = ?
+DEBUG 24 NHibernate.Persister.Collection.ICollectionPersister -  One-shot delete: DELETE FROM PersonGroup WHERE Person_id = ?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Group
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Group" WHERE Id = ?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT group_.Id, group_.Name as Name0_ FROM "Group" group_ WHERE group_.Id=?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Group" (Name, Id) VALUES (?, ?)
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Group" SET Name = ? WHERE Id = ?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Group" WHERE Id = ?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Group" (Name) VALUES (?); select last_insert_rowid()
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Group: SELECT group0_.Id as Id0_0_, group0_.Name as Name0_0_ FROM "Group" group0_ WHERE group0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Group: SELECT group0_.Id as Id0_1_, group0_.Name as Name0_1_, members1_.Group_id as Group1_3_, person2_.Id as Person2_3_, person2_.Id as Id2_0_, person2_.FirstName as FirstName2_0_, person2_.LastName as LastName2_0_ FROM "Group" group0_ left outer join PersonGroup members1_ on group0_.Id=members1_.Group_id left outer join "Person" person2_ on members1_.Person_id=person2_.Id WHERE group0_.Id=?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: Person
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM "Person" WHERE Id = ?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT person_.Id, person_.FirstName as FirstName2_, person_.LastName as LastName2_ FROM "Person" person_ WHERE person_.Id=?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO "Person" (FirstName, LastName, Id) VALUES (?, ?, ?)
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE "Person" SET FirstName = ?, LastName = ? WHERE Id = ?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM "Person" WHERE Id = ?
+DEBUG 24 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO "Person" (FirstName, LastName) VALUES (?, ?); select last_insert_rowid()
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity Person: SELECT person0_.Id as Id2_0_, person0_.FirstName as FirstName2_0_, person0_.LastName as LastName2_0_ FROM "Person" person0_ WHERE person0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 24 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity Person: SELECT person0_.Id as Id2_1_, person0_.FirstName as FirstName2_1_, person0_.LastName as LastName2_1_, memberofgr1_.Person_id as Person2_3_, group2_.Id as Group1_3_, group2_.Id as Id0_0_, group2_.Name as Name0_0_ FROM "Person" person0_ left outer join PersonGroup memberofgr1_ on person0_.Id=memberofgr1_.Person_id left outer join "Group" group2_ on memberofgr1_.Group_id=group2_.Id WHERE person0_.Id=?
+DEBUG 24 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Group.Members: SELECT members0_.Group_id as Group1_1_, members0_.Person_id as Person2_1_, person1_.Id as Id2_0_, person1_.FirstName as FirstName2_0_, person1_.LastName as LastName2_0_ FROM PersonGroup members0_ left outer join "Person" person1_ on members0_.Person_id=person1_.Id WHERE members0_.Group_id=?
+DEBUG 24 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection Person.MemberOfGroups: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join "Group" group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 24 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 24 NHibernate.Impl.SessionFactoryObjectFactory - registered: b43245f3137a439a96ffd1661c4d1b8b(unnamed)
+INFO 24 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 24 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 24 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 24 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=3698d579-da88-4621-8e91-6714b9cee5e9] opened session at timestamp: 634748766330, for session factory: [/b43245f3137a439a96ffd1661c4d1b8b]
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=3698d579-da88-4621-8e91-6714b9cee5e9] running ISession.Dispose()
+DEBUG 24 NHibernate.Impl.SessionImpl - [session-id=3698d579-da88-4621-8e91-6714b9cee5e9] executing real Dispose(True)
+DEBUG 24 NHibernate.Impl.SessionImpl - closing session
+DEBUG 24 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=e19e1d3e-0ad6-4143-a1fd-4b1f85712bf2] opened session at timestamp: 634748766536, for session factory: [/b43245f3137a439a96ffd1661c4d1b8b]
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=e19e1d3e-0ad6-4143-a1fd-4b1f85712bf2] running ISession.Dispose()
+DEBUG 21 NHibernate.Impl.SessionImpl - [session-id=e19e1d3e-0ad6-4143-a1fd-4b1f85712bf2] executing real Dispose(True)
+DEBUG 21 NHibernate.Impl.SessionImpl - closing session
+DEBUG 21 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=d50da130-a480-4169-9db9-271026cd4e07] opened session at timestamp: 634748767136, for session factory: [/b43245f3137a439a96ffd1661c4d1b8b]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=d50da130-a480-4169-9db9-271026cd4e07] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=d50da130-a480-4169-9db9-271026cd4e07] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=58197dbc-7205-486c-a76d-cc2bdea1c311] opened session at timestamp: 634748767503, for session factory: [/b43245f3137a439a96ffd1661c4d1b8b]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=58197dbc-7205-486c-a76d-cc2bdea1c311] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=58197dbc-7205-486c-a76d-cc2bdea1c311] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=f7e2f348-785f-4ec8-976a-3742c8b200fe] opened session at timestamp: 634748767895, for session factory: [/b43245f3137a439a96ffd1661c4d1b8b]
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=f7e2f348-785f-4ec8-976a-3742c8b200fe] running ISession.Dispose()
+DEBUG 16 NHibernate.Impl.SessionImpl - [session-id=f7e2f348-785f-4ec8-976a-3742c8b200fe] executing real Dispose(True)
+DEBUG 16 NHibernate.Impl.SessionImpl - closing session
+DEBUG 16 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 16 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 16 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

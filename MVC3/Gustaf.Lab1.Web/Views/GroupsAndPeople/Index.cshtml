@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Groups And People";
+}
+<h2>Groups And People</h2>
+<div>
+        <fieldset>
+            <legend>People and their membership in groups</legend>
+<ul>
+    @foreach (Person p in ViewBag.People)
+    {
+        <li>
+            @p.FirstName @p.LastName
+            <ul>
+                @foreach (Group g in p.MemberOfGroups)
+                {
+                    <li>
+                        @g.Name
+                    </li>
+                }
+            </ul>
+        </li> 
+    }
+</ul>
+</fieldset>
+

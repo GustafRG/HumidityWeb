@@ -1,0 +1,126 @@
+INFO 11 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 11 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+DEBUG 11 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Group.Members
+DEBUG 11 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Group_id, element: Person_id, type: Person
+DEBUG 11 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Person.MemberOfGroups
+DEBUG 11 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Person_id, element: Group_id, type: Group
+INFO 11 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 11 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 11 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 11 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 11 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 11 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 11 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 11 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 11 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 11 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+ERROR 11 NHibernate.Util.ReflectHelper - Could not load type System.Data.SQLite.SQLiteConnection, System.Data.SQLite.
+System.IO.FileNotFoundException: Det går inte att läsa in filen eller sammansättningen System.Data.SQLite eller ett av dess beroenden. Det går inte att hitta filen.
+Filnamn: System.Data.SQLite
+   vid System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   vid System.Reflection.Assembly.Load(String assemblyString)
+   vid NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Tillståndsinformation före bindning ===
+LOG: Användare = Gustaf-HP\Gustaf
+LOG: DisplayName = System.Data.SQLite
+ (Partial)
+VARN: Information om delvis bindning angavs för en sammansättning:
+VARN: Sammansättningsnamn: System.Data.SQLite | Domän-ID: 5
+VARN: En delvis bindning uppstår när endast en del av sammansättningens visningsnamn anges.
+VARN: Det kan leda till att bindningen läser in en felaktig sammansättning.
+VARN: Du rekommenderas att ange en fullständigt angiven textbaserad identitet för sammansättningen,
+VARN: som består av det enkla namnet, version, kultur och offentlig nyckeltoken.
+VARN: Mer information och vanliga lösningar på det här problemet finns i dokumentet http://go.microsoft.com/fwlink/?LinkId=109270.
+LOG: Programbas = file:///C:/Users/Gustaf/Desktop/MVC3/Gustaf.Lab1.Web/
+LOG: Ursprunglig PrivatePath = C:\Users\Gustaf\Desktop\MVC3\Gustaf.Lab1.Web\bin
+Anropar sammansättning: NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: Denna bindning startar i inläsningskontexten default.
+LOG: Använder programkonfigurationsfilen: C:\Users\Gustaf\Desktop\MVC3\Gustaf.Lab1.Web\web.config
+LOG: Använder värdkonfigurationsfilen: 
+LOG: Konfigurationsfilen från C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config används.
+LOG: Principen används inte för referensen vid detta tillfälle (privat, anpassad, delvis eller platsbaserad sammansättningsbindning).
+LOG: Samma bindning påträffades tidigare och misslyckades med = 0x80070002.
+
+ERROR 11 NHibernate.Util.ReflectHelper - Could not load type System.Data.SQLite.SQLiteCommand, System.Data.SQLite.
+System.IO.FileNotFoundException: Det går inte att läsa in filen eller sammansättningen System.Data.SQLite eller ett av dess beroenden. Det går inte att hitta filen.
+Filnamn: System.Data.SQLite
+   vid System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   vid System.Reflection.Assembly.Load(String assemblyString)
+   vid NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Tillståndsinformation före bindning ===
+LOG: Användare = Gustaf-HP\Gustaf
+LOG: DisplayName = System.Data.SQLite
+ (Partial)
+VARN: Information om delvis bindning angavs för en sammansättning:
+VARN: Sammansättningsnamn: System.Data.SQLite | Domän-ID: 5
+VARN: En delvis bindning uppstår när endast en del av sammansättningens visningsnamn anges.
+VARN: Det kan leda till att bindningen läser in en felaktig sammansättning.
+VARN: Du rekommenderas att ange en fullständigt angiven textbaserad identitet för sammansättningen,
+VARN: som består av det enkla namnet, version, kultur och offentlig nyckeltoken.
+VARN: Mer information och vanliga lösningar på det här problemet finns i dokumentet http://go.microsoft.com/fwlink/?LinkId=109270.
+LOG: Programbas = file:///C:/Users/Gustaf/Desktop/MVC3/Gustaf.Lab1.Web/
+LOG: Ursprunglig PrivatePath = C:\Users\Gustaf\Desktop\MVC3\Gustaf.Lab1.Web\bin
+Anropar sammansättning: NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: Denna bindning startar i inläsningskontexten default.
+LOG: Använder programkonfigurationsfilen: C:\Users\Gustaf\Desktop\MVC3\Gustaf.Lab1.Web\web.config
+LOG: Använder värdkonfigurationsfilen: 
+LOG: Konfigurationsfilen från C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config används.
+LOG: Principen används inte för referensen vid detta tillfälle (privat, anpassad, delvis eller platsbaserad sammansättningsbindning).
+LOG: Samma bindning påträffades tidigare och misslyckades med = 0x80070002.
+
+INFO 5 NHibernate.Cfg.Configuration - checking mappings queue
+INFO 5 NHibernate.Cfg.Configuration - processing one-to-many association mappings
+DEBUG 5 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Group.Members
+DEBUG 5 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Group_id, element: Person_id, type: Person
+DEBUG 5 NHibernate.Cfg.XmlHbmBinding.Binder - Second pass for collection: Person.MemberOfGroups
+DEBUG 5 NHibernate.Cfg.XmlHbmBinding.Binder - Mapped collection key: Person_id, element: Group_id, type: Group
+INFO 5 NHibernate.Cfg.Configuration - processing one-to-one association property references
+INFO 5 NHibernate.Cfg.Configuration - processing foreign key constraints
+DEBUG 5 NHibernate.Cfg.Configuration - resolving reference to class: Person
+DEBUG 5 NHibernate.Cfg.Configuration - resolving reference to class: Group
+INFO 5 NHibernate.Cfg.Configuration - processing filters (second pass)
+INFO 5 NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.SQLiteDialect
+INFO 5 NHibernate.Exceptions.SQLExceptionConverterFactory - Using dialect defined converter
+INFO 5 NHibernate.Cfg.SettingsFactory - Generate SQL with comments: disabled
+INFO 5 NHibernate.Connection.ConnectionProviderFactory - Initializing connection provider: NHibernate.Connection.DriverConnectionProvider
+INFO 5 NHibernate.Connection.ConnectionProvider - Configuring ConnectionProvider
+ERROR 5 NHibernate.Util.ReflectHelper - Could not load type System.Data.SQLite.SQLiteConnection, System.Data.SQLite.
+System.IO.FileNotFoundException: Det går inte att läsa in filen eller sammansättningen System.Data.SQLite eller ett av dess beroenden. Det går inte att hitta filen.
+Filnamn: System.Data.SQLite
+   vid System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   vid System.Reflection.Assembly.Load(String assemblyString)
+   vid NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+VARN: Loggningen av sammansättningsbindningen är inaktiverad.
+Du kan aktivera felloggning för sammansättningsbindningar genom att ange registervärdet [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) till 1.
+Obs! Prestanda kan försämras något med felloggning för sammansättningsbindningar.
+Du kan inaktivera funktionen genom att ta bort registervärdet [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 5 NHibernate.Util.ReflectHelper - Could not load type System.Data.SQLite.SQLiteCommand, System.Data.SQLite.
+System.IO.FileNotFoundException: Det går inte att läsa in filen eller sammansättningen System.Data.SQLite eller ett av dess beroenden. Det går inte att hitta filen.
+Filnamn: System.Data.SQLite
+   vid System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   vid System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   vid System.Reflection.Assembly.Load(String assemblyString)
+   vid NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+VARN: Loggningen av sammansättningsbindningen är inaktiverad.
+Du kan aktivera felloggning för sammansättningsbindningar genom att ange registervärdet [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) till 1.
+Obs! Prestanda kan försämras något med felloggning för sammansättningsbindningar.
+Du kan inaktivera funktionen genom att ta bort registervärdet [HKLM\Software\Microsoft\Fusion!EnableLog].
+

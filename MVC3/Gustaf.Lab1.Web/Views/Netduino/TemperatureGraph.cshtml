@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "TemperatureGraph";
+}
+
+<h2>TemperatureGraph</h2>
+
+<div id="chart_div" style="width:800px;height:300px;background-color:#fff;border:10px solid #fff;"></div>
+
+ <script type="text/javascript">
+     google.load("visualization", "1", { packages: ["corechart"] });
+     google.setOnLoadCallback(drawChart);
+     var rowArray = [];
+
+     // Random float between
+     function randomFloatBetween(minValue, maxValue, precision) {
+         if (typeof (precision) == 'undefined') {
+             precision = 2;
+         }
+         return parseFloat(Math.min(minValue + (Math.random() * (maxValue - minValue)), maxValue).toFixed(precision));
+     }
+
+     function drawChart(time, datapoint) {
+        rowArray.push([time, datapoint.Temperature, datapoint.Humidity]);
+        if(rowArray.length > 10){
+            rowArray.shift();
+        }
+        var datatb = new google.visualization.DataTable();
+         datatb.addColumn('timeofday', 'Time');
+         datatb.addColumn('number', 'Temperature');
+         datatb.addColumn('number', 'Humidity');
+         datatb.addRows(rowArray);
+
+        var options = {
+             title: 'Temperature/Humidity',
+             interpolateNulls: true,
+
+         };
+         
+         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+         chart.draw(datatb, options);
+
+     }
+     setInterval(function () {
+         var d = new Date();
+         time = [d.getHours(), d.getMinutes(), d.getSeconds()];
+         $.getJSON("ReadSHT15",null, function(data)
+         {
+            drawChart(time, data);
+         });
+         //datapoint.Temperature = randomFloatBetween(20,30,2);
+         //datapoint.Humidity = randomFloatBetween(30,45,2);
+
+     }, 2000);
+
+
+    </script>
+

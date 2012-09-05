@@ -1,0 +1,828 @@
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#1]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#1]]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - result set row: 0
+DEBUG 11 NHibernate.Loader.Loader - result row: EntityKey[Group#1]
+DEBUG 11 NHibernate.Loader.Loader - Initializing object from DataReader: [Group#1]
+DEBUG 11 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Group#1]
+DEBUG 11 NHibernate.Loader.Loader - found row of collection: [Person.MemberOfGroups#1]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#1]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#1]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#1]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [Group#1]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [Group#1]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [Group#1]
+DEBUG 11 NHibernate.Loader.Loader - result set row: 1
+DEBUG 11 NHibernate.Loader.Loader - result row: EntityKey[Group#2]
+DEBUG 11 NHibernate.Loader.Loader - Initializing object from DataReader: [Group#2]
+DEBUG 11 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Group#2]
+DEBUG 11 NHibernate.Loader.Loader - found row of collection: [Person.MemberOfGroups#1]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#1]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#1]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#1]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [Group#2]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [Group#2]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [Group#2]
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (2 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 107 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 2
+DEBUG 11 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Group#1]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Group.Members#1]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Group.Members#1]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#1]
+DEBUG 11 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#1]
+DEBUG 11 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Group#2]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Group.Members#2]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Group.Members#2]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#2]
+DEBUG 11 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#2]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#1]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#1]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#1]>@1ad6f54]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#1]>@1ad6f54]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#1]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#2]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#2]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 2 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 2 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#2]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#2]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#2]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#2]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - result set row: 0
+DEBUG 11 NHibernate.Loader.Loader - result row: EntityKey[Group#2]
+DEBUG 11 NHibernate.Loader.Loader - found row of collection: [Person.MemberOfGroups#2]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#2]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#2]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#2]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [Group#2]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [Group#2]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [Group#2]
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#2]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#2]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#2]>@291e5db]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#2]>@291e5db]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#2]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#3]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#3]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 3 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 3 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#3]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#3]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#3]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#3]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - result set row: 0
+DEBUG 11 NHibernate.Loader.Loader - result row: EntityKey[Group#3]
+DEBUG 11 NHibernate.Loader.Loader - Initializing object from DataReader: [Group#3]
+DEBUG 11 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [Group#3]
+DEBUG 11 NHibernate.Loader.Loader - found row of collection: [Person.MemberOfGroups#3]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#3]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#3]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#3]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [Group#3]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [Group#3]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [Group#3]
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 1
+DEBUG 11 NHibernate.Engine.TwoPhaseLoad - resolving associations for [Group#3]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Group.Members#3]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Group.Members#3]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[Group.Members#3]
+DEBUG 11 NHibernate.Engine.TwoPhaseLoad - done materializing entity [Group#3]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#3]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#3]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#3]>@1bc7ea3]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#3]>@1bc7ea3]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#3]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#4]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#4]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 4 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 4 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#4]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#4]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#4]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#4]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#4]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#4]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#4]>@2731b48]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#4]>@2731b48]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#4]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#5]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#5]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 5 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 5 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#5]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#5]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#5]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#5]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 2 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#5]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#5]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#5]>@29245b8]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#5]>@29245b8]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#5]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#6]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#6]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 6 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 6 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#6]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#6]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#6]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#6]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#6]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#6]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#6]>@11a5ef5]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#6]>@11a5ef5]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#6]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#7]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#7]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 7 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 7 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#7]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#7]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#7]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#7]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#7]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#7]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#7]>@18a87fe]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#7]>@18a87fe]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#7]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#8]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#8]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 8 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 8 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#8]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#8]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#8]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#8]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#8]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#8]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#8]>@370a1d2]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#8]>@370a1d2]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#8]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#9]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#9]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 9 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 9 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#9]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#9]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#9]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#9]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#9]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#9]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#9]>@1f94d73]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#9]>@1f94d73]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#9]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#10]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#10]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 10 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 10 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#10]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#10]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#10]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#10]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#10]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#10]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#10]>@37febdf]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#10]>@37febdf]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#10]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#11]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#11]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 11 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 11 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#11]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#11]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#11]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#11]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#11]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#11]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#11]>@11e9e18]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#11]>@11e9e18]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#11]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#12]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#12]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 12 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 12 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#12]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#12]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#12]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#12]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#12]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#12]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#12]>@23e451c]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#12]>@23e451c]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#12]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#13]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#13]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 13 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 13 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#13]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#13]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#13]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#13]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#13]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#13]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#13]>@2681ed]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#13]>@2681ed]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#13]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#14]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#14]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 14 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 14 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#14]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#14]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#14]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#14]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#14]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#14]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#14]>@18db589]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#14]>@18db589]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#14]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#15]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#15]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 15 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 15 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#15]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#15]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#15]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#15]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#15]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#15]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#15]>@22900f2]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#15]>@22900f2]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#15]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#16]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#16]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 16 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 16 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#16]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#16]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#16]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#16]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#16]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#16]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#16]>@23c4527]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#16]>@23c4527]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#16]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#17]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#17]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 17 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 17 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#17]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#17]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#17]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#17]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#17]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#17]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#17]>@22a2327]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#17]>@22a2327]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#17]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#18]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#18]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 18 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 18 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#18]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#18]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#18]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#18]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#18]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#18]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#18]>@203fbf4]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#18]>@203fbf4]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#18]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#19]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#19]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 19 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 19 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#19]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#19]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#19]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#19]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#19]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#19]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#19]>@119f08c]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#19]>@119f08c]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#19]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#20]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#20]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 20 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 20 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#20]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#20]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#20]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#20]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#20]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#20]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#20]>@18ae1f1]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#20]>@18ae1f1]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [Person.MemberOfGroups#20]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: Person.MemberOfGroups
+DEBUG 11 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 11 NHibernate.Loader.Loader - done loading collection
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [Person.MemberOfGroups#21]
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 11 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 11 NHibernate.Loader.Loader - loading collection: [Person.MemberOfGroups#21]
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=?
+DEBUG 11 NHibernate.Engine.QueryParameters - BindParameters(Positional0:NHibernate.Type.Int32Type) 21 -> [0]
+INFO 11 NHibernate.Loader.Loader - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0
+DEBUG 11 NHibernate.SQL - SELECT memberofgr0_.Person_id as Person2_1_, memberofgr0_.Group_id as Group1_1_, group1_.Id as Id0_0_, group1_.Name as Name0_0_ FROM PersonGroup memberofgr0_ left outer join [Group] group1_ on memberofgr0_.Group_id=group1_.Id WHERE memberofgr0_.Person_id=@p0;@p0 = 21 [Type: Int32 (0)]
+DEBUG 11 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 11 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [Person.MemberOfGroups#21]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#21]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#21]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#21]] located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 11 NHibernate.Loader.Loader - processing result set
+DEBUG 11 NHibernate.Loader.Loader - result set row: 0
+DEBUG 11 NHibernate.Loader.Loader - result row: EntityKey[Group#3]
+DEBUG 11 NHibernate.Loader.Loader - found row of collection: [Person.MemberOfGroups#21]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[Person.MemberOfGroups#21]]
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#21]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#21]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [Group#3]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [Group#3]
+DEBUG 11 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [Group#3]
+DEBUG 11 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 11 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 11 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 11 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 11 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[Person.MemberOfGroups#21]] in any result-set context
+DEBUG 11 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[Person.MemberOfGroups#21]] not located in load context
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[Person.MemberOfGroups#21]>@3d47121]
+DEBUG 11 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: Person.MemberOfGroups

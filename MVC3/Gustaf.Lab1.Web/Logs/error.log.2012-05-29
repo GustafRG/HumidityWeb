@@ -1,0 +1,2 @@
+INFO 20 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 20 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

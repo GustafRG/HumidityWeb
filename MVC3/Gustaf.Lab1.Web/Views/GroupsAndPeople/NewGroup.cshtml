@@ -1,0 +1,11 @@
+﻿@model Gustaf.Lab1.Web.Models.NewGroupModel
+           
+@{
+    ViewBag.Title = "Add new group";
+}
+<h2>Add new group</h2>
+@using( Html.BeginForm() )
+{
+    @Html.TextBox("Name", (string)ViewBag.TextMessage)
+     <input type="submit" value="Add" />
+}

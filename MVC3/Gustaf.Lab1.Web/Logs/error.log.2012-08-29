@@ -1,0 +1,725 @@
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=bca665ea-5d06-4cc4-ba27-bc26001bb574] opened session at timestamp: 634818813102, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=bca665ea-5d06-4cc4-ba27-bc26001bb574] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=bca665ea-5d06-4cc4-ba27-bc26001bb574] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=a41baad1-2dbf-419d-8f74-190cf58dcea5] opened session at timestamp: 634818813122, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=a41baad1-2dbf-419d-8f74-190cf58dcea5] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=a41baad1-2dbf-419d-8f74-190cf58dcea5] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=1a1ff6e1-3a1e-40c5-a773-ef60f74ed8e6] opened session at timestamp: 634818813142, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=1a1ff6e1-3a1e-40c5-a773-ef60f74ed8e6] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=1a1ff6e1-3a1e-40c5-a773-ef60f74ed8e6] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=d342dc9e-ecfe-49f7-9a12-630599788198] opened session at timestamp: 634818813162, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=d342dc9e-ecfe-49f7-9a12-630599788198] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=d342dc9e-ecfe-49f7-9a12-630599788198] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=7a1ab4ac-f126-489e-a698-24fd1ba2c624] opened session at timestamp: 634818813182, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=7a1ab4ac-f126-489e-a698-24fd1ba2c624] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=7a1ab4ac-f126-489e-a698-24fd1ba2c624] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=61ae29b7-7546-4e2e-a939-a923bbe2d365] opened session at timestamp: 634818813202, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=61ae29b7-7546-4e2e-a939-a923bbe2d365] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=61ae29b7-7546-4e2e-a939-a923bbe2d365] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=8bba2040-3a50-4936-98f3-f884821985c0] opened session at timestamp: 634818813222, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=8bba2040-3a50-4936-98f3-f884821985c0] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=8bba2040-3a50-4936-98f3-f884821985c0] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bc8d63ee-eb2b-42bf-8682-73295fc5ed7a] opened session at timestamp: 634818813242, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bc8d63ee-eb2b-42bf-8682-73295fc5ed7a] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bc8d63ee-eb2b-42bf-8682-73295fc5ed7a] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ec9dd3b9-78a9-437d-a944-d88de4fc51df] opened session at timestamp: 634818813262, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ec9dd3b9-78a9-437d-a944-d88de4fc51df] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ec9dd3b9-78a9-437d-a944-d88de4fc51df] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=6a5d8b75-5abc-43ee-951a-fce712f16a5f] opened session at timestamp: 634818813282, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=6a5d8b75-5abc-43ee-951a-fce712f16a5f] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=6a5d8b75-5abc-43ee-951a-fce712f16a5f] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=371b4d89-2c59-421a-bf96-592de1fcffa9] opened session at timestamp: 634818813302, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=371b4d89-2c59-421a-bf96-592de1fcffa9] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=371b4d89-2c59-421a-bf96-592de1fcffa9] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=7aa304ea-8741-4710-9144-44e1b051ce50] opened session at timestamp: 634818813322, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=7aa304ea-8741-4710-9144-44e1b051ce50] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=7aa304ea-8741-4710-9144-44e1b051ce50] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=d647bc4e-5ff8-45a8-acfa-5639ea923f26] opened session at timestamp: 634818813342, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=d647bc4e-5ff8-45a8-acfa-5639ea923f26] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=d647bc4e-5ff8-45a8-acfa-5639ea923f26] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=9a4d13bf-5547-4626-ae36-32c99ac6869b] opened session at timestamp: 634818813362, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=9a4d13bf-5547-4626-ae36-32c99ac6869b] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=9a4d13bf-5547-4626-ae36-32c99ac6869b] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=25363bc2-300c-449a-aaa5-e9278b8acb87] opened session at timestamp: 634818813382, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=25363bc2-300c-449a-aaa5-e9278b8acb87] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=25363bc2-300c-449a-aaa5-e9278b8acb87] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=f73f07b6-6a6d-4f5c-ad20-434e48410ee3] opened session at timestamp: 634818813402, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=f73f07b6-6a6d-4f5c-ad20-434e48410ee3] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=f73f07b6-6a6d-4f5c-ad20-434e48410ee3] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=152880c8-5789-4480-b12b-350bd1b75000] opened session at timestamp: 634818813422, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=152880c8-5789-4480-b12b-350bd1b75000] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=152880c8-5789-4480-b12b-350bd1b75000] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=1d218e31-504a-40ed-afb8-bfe5e41499d6] opened session at timestamp: 634818813442, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=1d218e31-504a-40ed-afb8-bfe5e41499d6] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=1d218e31-504a-40ed-afb8-bfe5e41499d6] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=49a9f427-8889-4018-bb82-880ff4c6c75e] opened session at timestamp: 634818813462, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=49a9f427-8889-4018-bb82-880ff4c6c75e] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=49a9f427-8889-4018-bb82-880ff4c6c75e] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=48eb6634-94bd-4819-9158-69bdaae4f8ed] opened session at timestamp: 634818813482, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=48eb6634-94bd-4819-9158-69bdaae4f8ed] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=48eb6634-94bd-4819-9158-69bdaae4f8ed] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=15fddcb0-4276-4376-b29b-9e74d0db78ee] opened session at timestamp: 634818813502, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=15fddcb0-4276-4376-b29b-9e74d0db78ee] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=15fddcb0-4276-4376-b29b-9e74d0db78ee] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=e73aed05-76b3-444a-93fa-880ad69ff67e] opened session at timestamp: 634818813522, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=e73aed05-76b3-444a-93fa-880ad69ff67e] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=e73aed05-76b3-444a-93fa-880ad69ff67e] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=dc963897-e8ac-425a-88d2-d1feed019339] opened session at timestamp: 634818813542, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=dc963897-e8ac-425a-88d2-d1feed019339] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=dc963897-e8ac-425a-88d2-d1feed019339] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=4cf60f18-2ee8-4dc2-8f85-c2cba7e27730] opened session at timestamp: 634818813562, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=4cf60f18-2ee8-4dc2-8f85-c2cba7e27730] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=4cf60f18-2ee8-4dc2-8f85-c2cba7e27730] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=ac2a69ee-46b8-4274-bd04-3364524ba952] opened session at timestamp: 634818813582, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=ac2a69ee-46b8-4274-bd04-3364524ba952] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=ac2a69ee-46b8-4274-bd04-3364524ba952] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=47936c3b-4be8-4e63-b89f-3f39a2d09c34] opened session at timestamp: 634818813602, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=47936c3b-4be8-4e63-b89f-3f39a2d09c34] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=47936c3b-4be8-4e63-b89f-3f39a2d09c34] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bdcd59c9-3b68-4777-b3b3-365feeb3df45] opened session at timestamp: 634818813622, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bdcd59c9-3b68-4777-b3b3-365feeb3df45] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bdcd59c9-3b68-4777-b3b3-365feeb3df45] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0d39e467-48c8-4ca8-b078-53cb0654b4c1] opened session at timestamp: 634818813642, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0d39e467-48c8-4ca8-b078-53cb0654b4c1] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0d39e467-48c8-4ca8-b078-53cb0654b4c1] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=8430c1f6-a955-42d4-8d2c-c3a549662785] opened session at timestamp: 634818813662, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=8430c1f6-a955-42d4-8d2c-c3a549662785] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=8430c1f6-a955-42d4-8d2c-c3a549662785] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=b6cc4aa8-66df-40d2-9bff-f82e8550c135] opened session at timestamp: 634818813682, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=b6cc4aa8-66df-40d2-9bff-f82e8550c135] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=b6cc4aa8-66df-40d2-9bff-f82e8550c135] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=260bbced-cb68-4c1c-aea6-3b35ecbc46ed] opened session at timestamp: 634818813702, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=260bbced-cb68-4c1c-aea6-3b35ecbc46ed] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=260bbced-cb68-4c1c-aea6-3b35ecbc46ed] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=3b5ae90e-25ef-4f18-a249-717b279adb8d] opened session at timestamp: 634818813722, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=3b5ae90e-25ef-4f18-a249-717b279adb8d] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=3b5ae90e-25ef-4f18-a249-717b279adb8d] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=f586f424-fd39-4862-9612-28e30fb56e12] opened session at timestamp: 634818813742, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=f586f424-fd39-4862-9612-28e30fb56e12] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=f586f424-fd39-4862-9612-28e30fb56e12] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=19fe325e-7065-4857-98e1-3baca613f514] opened session at timestamp: 634818813762, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=19fe325e-7065-4857-98e1-3baca613f514] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=19fe325e-7065-4857-98e1-3baca613f514] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=78516bbb-ea5e-402f-b027-b62ff9f76e96] opened session at timestamp: 634818813782, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=78516bbb-ea5e-402f-b027-b62ff9f76e96] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=78516bbb-ea5e-402f-b027-b62ff9f76e96] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=967b7cea-1e6d-4bd5-adf7-2fb10c254d6d] opened session at timestamp: 634818813802, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=967b7cea-1e6d-4bd5-adf7-2fb10c254d6d] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=967b7cea-1e6d-4bd5-adf7-2fb10c254d6d] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=66de398a-28d0-41da-97d7-d7e75064e87c] opened session at timestamp: 634818813822, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=66de398a-28d0-41da-97d7-d7e75064e87c] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=66de398a-28d0-41da-97d7-d7e75064e87c] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=0bc1c9e9-d6c6-43c6-852c-53d0252eba95] opened session at timestamp: 634818813842, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=0bc1c9e9-d6c6-43c6-852c-53d0252eba95] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=0bc1c9e9-d6c6-43c6-852c-53d0252eba95] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=f52501d5-4f3d-4c3a-8385-eeb605a8aa16] opened session at timestamp: 634818813862, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=f52501d5-4f3d-4c3a-8385-eeb605a8aa16] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=f52501d5-4f3d-4c3a-8385-eeb605a8aa16] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=67dcfaf0-dc51-45dc-b6e4-cb6ef1728a57] opened session at timestamp: 634818813882, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=67dcfaf0-dc51-45dc-b6e4-cb6ef1728a57] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=67dcfaf0-dc51-45dc-b6e4-cb6ef1728a57] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=a3509410-ae83-4fb9-8fab-3d24f742bb66] opened session at timestamp: 634818813902, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=a3509410-ae83-4fb9-8fab-3d24f742bb66] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=a3509410-ae83-4fb9-8fab-3d24f742bb66] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=1498e785-384c-4671-8ed6-7dee5754fb65] opened session at timestamp: 634818813922, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=1498e785-384c-4671-8ed6-7dee5754fb65] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=1498e785-384c-4671-8ed6-7dee5754fb65] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=fa5faaa6-4644-4dcf-9cf6-3b39e779cfbf] opened session at timestamp: 634818813942, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=fa5faaa6-4644-4dcf-9cf6-3b39e779cfbf] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=fa5faaa6-4644-4dcf-9cf6-3b39e779cfbf] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=2ae626a8-c49c-4056-a059-67355bf92802] opened session at timestamp: 634818813962, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=2ae626a8-c49c-4056-a059-67355bf92802] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=2ae626a8-c49c-4056-a059-67355bf92802] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=b95ce6a7-28cd-4abd-94e7-e204166e35cc] opened session at timestamp: 634818813982, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=b95ce6a7-28cd-4abd-94e7-e204166e35cc] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=b95ce6a7-28cd-4abd-94e7-e204166e35cc] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0f98c3f8-0731-420b-b48e-6c8ff7e580f0] opened session at timestamp: 634818814002, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0f98c3f8-0731-420b-b48e-6c8ff7e580f0] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=0f98c3f8-0731-420b-b48e-6c8ff7e580f0] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bb0ce364-8564-440b-977a-703994f6c795] opened session at timestamp: 634818814022, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bb0ce364-8564-440b-977a-703994f6c795] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=bb0ce364-8564-440b-977a-703994f6c795] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=c06501a9-20b7-4373-9637-d1a8a430e198] opened session at timestamp: 634818814042, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=c06501a9-20b7-4373-9637-d1a8a430e198] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=c06501a9-20b7-4373-9637-d1a8a430e198] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=b08e709a-dc6b-49fd-beda-c25fb2d9869d] opened session at timestamp: 634818814062, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=b08e709a-dc6b-49fd-beda-c25fb2d9869d] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=b08e709a-dc6b-49fd-beda-c25fb2d9869d] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=102ebcf8-6aaa-4375-a1e6-d220993053ea] opened session at timestamp: 634818814082, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=102ebcf8-6aaa-4375-a1e6-d220993053ea] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=102ebcf8-6aaa-4375-a1e6-d220993053ea] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ecb4cc20-08e5-475a-bb4c-d95743def7b7] opened session at timestamp: 634818814102, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ecb4cc20-08e5-475a-bb4c-d95743def7b7] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ecb4cc20-08e5-475a-bb4c-d95743def7b7] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1d850c7f-1b27-42bb-8bf3-6308af1f8bd2] opened session at timestamp: 634818814122, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1d850c7f-1b27-42bb-8bf3-6308af1f8bd2] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1d850c7f-1b27-42bb-8bf3-6308af1f8bd2] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=4384f8f2-2327-4c59-8058-ba4332c44273] opened session at timestamp: 634818814142, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=4384f8f2-2327-4c59-8058-ba4332c44273] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=4384f8f2-2327-4c59-8058-ba4332c44273] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=d87a3b28-b8e7-4a22-9c4c-4721e131240d] opened session at timestamp: 634818814162, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=d87a3b28-b8e7-4a22-9c4c-4721e131240d] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=d87a3b28-b8e7-4a22-9c4c-4721e131240d] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=ef6295e9-cad4-4656-9eb5-3863932ed629] opened session at timestamp: 634818814182, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=ef6295e9-cad4-4656-9eb5-3863932ed629] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=ef6295e9-cad4-4656-9eb5-3863932ed629] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=916534b2-022e-4ade-a08a-ae92a201f70b] opened session at timestamp: 634818814202, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=916534b2-022e-4ade-a08a-ae92a201f70b] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=916534b2-022e-4ade-a08a-ae92a201f70b] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=51b82ecc-5507-4a9b-8f5f-608afe47134f] opened session at timestamp: 634818814222, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=51b82ecc-5507-4a9b-8f5f-608afe47134f] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=51b82ecc-5507-4a9b-8f5f-608afe47134f] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=7d2218e3-bddb-4536-8eec-b465cbdf8aef] opened session at timestamp: 634818814242, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=7d2218e3-bddb-4536-8eec-b465cbdf8aef] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=7d2218e3-bddb-4536-8eec-b465cbdf8aef] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=68e73652-5875-495a-bbe5-c0c0c96b8f6d] opened session at timestamp: 634818814262, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=68e73652-5875-495a-bbe5-c0c0c96b8f6d] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=68e73652-5875-495a-bbe5-c0c0c96b8f6d] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=bfc8c149-3b4e-4c75-b0fe-5c169ff4157a] opened session at timestamp: 634818814282, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=bfc8c149-3b4e-4c75-b0fe-5c169ff4157a] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=bfc8c149-3b4e-4c75-b0fe-5c169ff4157a] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f048b452-7ab0-4b62-b6ab-18e5eb06034e] opened session at timestamp: 634818814302, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f048b452-7ab0-4b62-b6ab-18e5eb06034e] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f048b452-7ab0-4b62-b6ab-18e5eb06034e] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4cc647b7-f864-465f-9594-6d75c139b6dc] opened session at timestamp: 634818814322, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4cc647b7-f864-465f-9594-6d75c139b6dc] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4cc647b7-f864-465f-9594-6d75c139b6dc] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=f2c98e43-46f9-44ee-a1bd-15686b17e2b7] opened session at timestamp: 634818814342, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=f2c98e43-46f9-44ee-a1bd-15686b17e2b7] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=f2c98e43-46f9-44ee-a1bd-15686b17e2b7] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=0aa4894c-39dc-46f9-b561-670a288d049a] opened session at timestamp: 634818814362, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=0aa4894c-39dc-46f9-b561-670a288d049a] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=0aa4894c-39dc-46f9-b561-670a288d049a] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=7e118d97-f722-4c4b-a109-854729d6e48c] opened session at timestamp: 634818814382, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=7e118d97-f722-4c4b-a109-854729d6e48c] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=7e118d97-f722-4c4b-a109-854729d6e48c] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=3770cd93-6a73-4e45-9c57-f352085fb3c1] opened session at timestamp: 634818814402, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=3770cd93-6a73-4e45-9c57-f352085fb3c1] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=3770cd93-6a73-4e45-9c57-f352085fb3c1] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=2d9ee489-de2c-4364-a4d2-67b71bdbe2e1] opened session at timestamp: 634818814422, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=2d9ee489-de2c-4364-a4d2-67b71bdbe2e1] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=2d9ee489-de2c-4364-a4d2-67b71bdbe2e1] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=a0fd1262-0a84-498d-b95d-98c0e29c93d6] opened session at timestamp: 634818814442, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=a0fd1262-0a84-498d-b95d-98c0e29c93d6] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=a0fd1262-0a84-498d-b95d-98c0e29c93d6] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=95e5e7e8-c08d-426d-b492-a37cc96340b5] opened session at timestamp: 634818814462, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=95e5e7e8-c08d-426d-b492-a37cc96340b5] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=95e5e7e8-c08d-426d-b492-a37cc96340b5] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=310e1068-916c-4820-9350-6dad9da03ff7] opened session at timestamp: 634818814482, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=310e1068-916c-4820-9350-6dad9da03ff7] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=310e1068-916c-4820-9350-6dad9da03ff7] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=99bccbb8-c578-4938-a7d1-3a626b92f5fa] opened session at timestamp: 634818814502, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=99bccbb8-c578-4938-a7d1-3a626b92f5fa] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=99bccbb8-c578-4938-a7d1-3a626b92f5fa] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=fffe8b4d-7ac0-4ab4-9375-81bc2231d5bd] opened session at timestamp: 634818814522, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=fffe8b4d-7ac0-4ab4-9375-81bc2231d5bd] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=fffe8b4d-7ac0-4ab4-9375-81bc2231d5bd] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=e8410b99-1b32-490b-9090-b5d581f16090] opened session at timestamp: 634818814542, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=e8410b99-1b32-490b-9090-b5d581f16090] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=e8410b99-1b32-490b-9090-b5d581f16090] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1ebc9896-baa7-4256-8d39-24728cd5e9f6] opened session at timestamp: 634818814562, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1ebc9896-baa7-4256-8d39-24728cd5e9f6] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=1ebc9896-baa7-4256-8d39-24728cd5e9f6] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=709df3a0-0105-4608-8be1-9f23cdc9db27] opened session at timestamp: 634818814582, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=709df3a0-0105-4608-8be1-9f23cdc9db27] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=709df3a0-0105-4608-8be1-9f23cdc9db27] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4632145e-43d9-47ce-9fad-1fa35bcb4c64] opened session at timestamp: 634818814602, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4632145e-43d9-47ce-9fad-1fa35bcb4c64] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4632145e-43d9-47ce-9fad-1fa35bcb4c64] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=6081a25a-e94b-4589-bfbf-d4e2e641827b] opened session at timestamp: 634818814622, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=6081a25a-e94b-4589-bfbf-d4e2e641827b] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=6081a25a-e94b-4589-bfbf-d4e2e641827b] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=5919e86b-cd41-4e39-b55d-e339ab51a70a] opened session at timestamp: 634818814642, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=5919e86b-cd41-4e39-b55d-e339ab51a70a] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=5919e86b-cd41-4e39-b55d-e339ab51a70a] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=12d1ddb0-16f0-42e0-854c-32fa026945fe] opened session at timestamp: 634818814662, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=12d1ddb0-16f0-42e0-854c-32fa026945fe] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=12d1ddb0-16f0-42e0-854c-32fa026945fe] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=c102023b-3f67-47da-939b-4c59b50750d7] opened session at timestamp: 634818814682, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=c102023b-3f67-47da-939b-4c59b50750d7] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=c102023b-3f67-47da-939b-4c59b50750d7] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=2dbce7e2-a6ad-475f-964b-082aafa950ce] opened session at timestamp: 634818814702, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=2dbce7e2-a6ad-475f-964b-082aafa950ce] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=2dbce7e2-a6ad-475f-964b-082aafa950ce] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=02422d91-9915-455c-83d9-6ebd5efe0680] opened session at timestamp: 634818814722, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=02422d91-9915-455c-83d9-6ebd5efe0680] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=02422d91-9915-455c-83d9-6ebd5efe0680] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=5bc9209c-af43-40a5-9233-5280b6dd9e4b] opened session at timestamp: 634818814742, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=5bc9209c-af43-40a5-9233-5280b6dd9e4b] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=5bc9209c-af43-40a5-9233-5280b6dd9e4b] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=11318141-682f-4136-b1f7-ebf9c747282e] opened session at timestamp: 634818814762, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=11318141-682f-4136-b1f7-ebf9c747282e] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=11318141-682f-4136-b1f7-ebf9c747282e] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=63282217-1bd7-4134-951d-8e11591370fd] opened session at timestamp: 634818814782, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=63282217-1bd7-4134-951d-8e11591370fd] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=63282217-1bd7-4134-951d-8e11591370fd] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=e3dede0c-9512-4b78-89b5-e13076a59af1] opened session at timestamp: 634818814802, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=e3dede0c-9512-4b78-89b5-e13076a59af1] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=e3dede0c-9512-4b78-89b5-e13076a59af1] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=53ee8946-87c6-4108-9d21-5aaddd5dba91] opened session at timestamp: 634818814822, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=53ee8946-87c6-4108-9d21-5aaddd5dba91] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=53ee8946-87c6-4108-9d21-5aaddd5dba91] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=010e3997-676d-4217-960a-7f5ae0097951] opened session at timestamp: 634818814842, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=010e3997-676d-4217-960a-7f5ae0097951] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=010e3997-676d-4217-960a-7f5ae0097951] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=604154c7-31d1-4b12-ba6e-9ce94a40ebe0] opened session at timestamp: 634818814862, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=604154c7-31d1-4b12-ba6e-9ce94a40ebe0] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=604154c7-31d1-4b12-ba6e-9ce94a40ebe0] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ad511c28-a90a-43a3-87a4-98442063662d] opened session at timestamp: 634818814882, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ad511c28-a90a-43a3-87a4-98442063662d] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ad511c28-a90a-43a3-87a4-98442063662d] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=535de4ee-78ab-4d74-92d6-538488e6b7be] opened session at timestamp: 634818814902, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=535de4ee-78ab-4d74-92d6-538488e6b7be] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=535de4ee-78ab-4d74-92d6-538488e6b7be] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=cb1b57dc-3728-469c-a472-0b92174a0861] opened session at timestamp: 634818814922, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=cb1b57dc-3728-469c-a472-0b92174a0861] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=cb1b57dc-3728-469c-a472-0b92174a0861] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=ca69f940-f89b-4ff1-a401-07704d0fec4a] opened session at timestamp: 634818814942, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=ca69f940-f89b-4ff1-a401-07704d0fec4a] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=ca69f940-f89b-4ff1-a401-07704d0fec4a] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=46ff7cf7-6dd0-4354-b7c1-3ee6174f85c1] opened session at timestamp: 634818814962, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=46ff7cf7-6dd0-4354-b7c1-3ee6174f85c1] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=46ff7cf7-6dd0-4354-b7c1-3ee6174f85c1] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=09739ea7-bc00-4402-bcef-f5b15030e07a] opened session at timestamp: 634818814982, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=09739ea7-bc00-4402-bcef-f5b15030e07a] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=09739ea7-bc00-4402-bcef-f5b15030e07a] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=971089b6-e29e-451f-a671-4e4fcf1168cf] opened session at timestamp: 634818815002, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=971089b6-e29e-451f-a671-4e4fcf1168cf] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=971089b6-e29e-451f-a671-4e4fcf1168cf] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=3d9f391f-00a8-4f5a-8cfc-ae25146a04c7] opened session at timestamp: 634818815022, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=3d9f391f-00a8-4f5a-8cfc-ae25146a04c7] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=3d9f391f-00a8-4f5a-8cfc-ae25146a04c7] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=eebc86aa-6b3c-46c4-9db4-07885f96a760] opened session at timestamp: 634818815042, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=eebc86aa-6b3c-46c4-9db4-07885f96a760] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=eebc86aa-6b3c-46c4-9db4-07885f96a760] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=0c23c6ef-a62e-41c4-a3f8-a7560b4a1f6e] opened session at timestamp: 634818815062, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=0c23c6ef-a62e-41c4-a3f8-a7560b4a1f6e] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=0c23c6ef-a62e-41c4-a3f8-a7560b4a1f6e] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=97fbe90a-8437-4d00-aaa5-e49d040a4d33] opened session at timestamp: 634818815082, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=97fbe90a-8437-4d00-aaa5-e49d040a4d33] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=97fbe90a-8437-4d00-aaa5-e49d040a4d33] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=55f40d54-82fc-4860-9745-035d5ffa16f2] opened session at timestamp: 634818815102, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=55f40d54-82fc-4860-9745-035d5ffa16f2] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=55f40d54-82fc-4860-9745-035d5ffa16f2] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=a3c43495-287d-4054-b243-75c3063027ed] opened session at timestamp: 634818815122, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=a3c43495-287d-4054-b243-75c3063027ed] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=a3c43495-287d-4054-b243-75c3063027ed] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=6dfe0c59-b25e-470b-8299-a46fa811e826] opened session at timestamp: 634818815142, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=6dfe0c59-b25e-470b-8299-a46fa811e826] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=6dfe0c59-b25e-470b-8299-a46fa811e826] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=cca5e4a8-504f-4a97-bff4-a7f73d8cf64d] opened session at timestamp: 634818815163, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=cca5e4a8-504f-4a97-bff4-a7f73d8cf64d] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=cca5e4a8-504f-4a97-bff4-a7f73d8cf64d] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=f204670c-dca1-484b-8034-b7baab8fd562] opened session at timestamp: 634818815183, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=f204670c-dca1-484b-8034-b7baab8fd562] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=f204670c-dca1-484b-8034-b7baab8fd562] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=72fae4f0-323a-42a6-be38-acc556149417] opened session at timestamp: 634818815203, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=72fae4f0-323a-42a6-be38-acc556149417] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=72fae4f0-323a-42a6-be38-acc556149417] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=c495bba6-2930-4069-82f4-836445e9b4b8] opened session at timestamp: 634818815223, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=c495bba6-2930-4069-82f4-836445e9b4b8] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=c495bba6-2930-4069-82f4-836445e9b4b8] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ff074fdd-c16e-4ed2-85d6-31a5c01b1ff8] opened session at timestamp: 634818815243, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ff074fdd-c16e-4ed2-85d6-31a5c01b1ff8] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=ff074fdd-c16e-4ed2-85d6-31a5c01b1ff8] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=26440447-1c08-4dee-8669-a9d490b64507] opened session at timestamp: 634818815263, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=26440447-1c08-4dee-8669-a9d490b64507] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=26440447-1c08-4dee-8669-a9d490b64507] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8377c51b-d3ab-4b86-8f27-d2afb2a5030d] opened session at timestamp: 634818815283, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8377c51b-d3ab-4b86-8f27-d2afb2a5030d] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8377c51b-d3ab-4b86-8f27-d2afb2a5030d] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=5d2fe4d5-13c2-4348-8e82-02e4b0f84fdd] opened session at timestamp: 634818815305, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=5d2fe4d5-13c2-4348-8e82-02e4b0f84fdd] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=5d2fe4d5-13c2-4348-8e82-02e4b0f84fdd] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=945df986-d3ee-43c6-97c1-85d7668e539b] opened session at timestamp: 634818815325, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=945df986-d3ee-43c6-97c1-85d7668e539b] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=945df986-d3ee-43c6-97c1-85d7668e539b] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8ea9a9f8-0545-4ddf-ae28-13b59d4c9755] opened session at timestamp: 634818815345, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8ea9a9f8-0545-4ddf-ae28-13b59d4c9755] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=8ea9a9f8-0545-4ddf-ae28-13b59d4c9755] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=fab80da2-1bc7-491c-97a8-c0f0d8c8e2f8] opened session at timestamp: 634818815365, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=fab80da2-1bc7-491c-97a8-c0f0d8c8e2f8] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=fab80da2-1bc7-491c-97a8-c0f0d8c8e2f8] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=09add779-4d93-4ff5-8032-f756edbaed7e] opened session at timestamp: 634818815385, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=09add779-4d93-4ff5-8032-f756edbaed7e] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=09add779-4d93-4ff5-8032-f756edbaed7e] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=8eccc14c-cfbb-45c2-9b51-0ddb79e2baa9] opened session at timestamp: 634818815405, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=8eccc14c-cfbb-45c2-9b51-0ddb79e2baa9] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=8eccc14c-cfbb-45c2-9b51-0ddb79e2baa9] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=88de2e8e-3616-4e0f-849a-509ed96b05dd] opened session at timestamp: 634818815425, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=88de2e8e-3616-4e0f-849a-509ed96b05dd] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=88de2e8e-3616-4e0f-849a-509ed96b05dd] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=e5a91349-abf2-415c-8a37-b8a6f97104fd] opened session at timestamp: 634818815445, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=e5a91349-abf2-415c-8a37-b8a6f97104fd] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=e5a91349-abf2-415c-8a37-b8a6f97104fd] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=76179d7c-35d3-455a-83dd-3ae6e859cc9b] opened session at timestamp: 634818815465, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=76179d7c-35d3-455a-83dd-3ae6e859cc9b] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=76179d7c-35d3-455a-83dd-3ae6e859cc9b] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=e401aca9-3147-495d-b19f-fcd508f1dd55] opened session at timestamp: 634818815485, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=e401aca9-3147-495d-b19f-fcd508f1dd55] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=e401aca9-3147-495d-b19f-fcd508f1dd55] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=982e5c81-933d-4177-82b9-69bb2b10d475] opened session at timestamp: 634818815505, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=982e5c81-933d-4177-82b9-69bb2b10d475] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=982e5c81-933d-4177-82b9-69bb2b10d475] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=9527dd44-4845-4718-94e2-97c5ef16342d] opened session at timestamp: 634818815525, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=9527dd44-4845-4718-94e2-97c5ef16342d] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=9527dd44-4845-4718-94e2-97c5ef16342d] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=cf233e7a-d645-475b-bfed-5ee7957163d8] opened session at timestamp: 634818815545, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=cf233e7a-d645-475b-bfed-5ee7957163d8] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=cf233e7a-d645-475b-bfed-5ee7957163d8] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=36793df0-b6e4-4630-9cee-8bd53e123914] opened session at timestamp: 634818815565, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=36793df0-b6e4-4630-9cee-8bd53e123914] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=36793df0-b6e4-4630-9cee-8bd53e123914] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=da842347-8521-4f08-909a-403fe7067966] opened session at timestamp: 634818815585, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=da842347-8521-4f08-909a-403fe7067966] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=da842347-8521-4f08-909a-403fe7067966] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4a3a113d-ba92-4aee-9947-46ccd8e3ab4a] opened session at timestamp: 634818815605, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4a3a113d-ba92-4aee-9947-46ccd8e3ab4a] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=4a3a113d-ba92-4aee-9947-46ccd8e3ab4a] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=8b0ed3af-d196-473e-b795-709963a47d2c] opened session at timestamp: 634818815625, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=8b0ed3af-d196-473e-b795-709963a47d2c] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=8b0ed3af-d196-473e-b795-709963a47d2c] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=c071cfd7-c26e-469f-a435-671f21a5e545] opened session at timestamp: 634818815645, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=c071cfd7-c26e-469f-a435-671f21a5e545] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=c071cfd7-c26e-469f-a435-671f21a5e545] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=26f0740f-f0b5-4a29-9be5-f9f5d449bff3] opened session at timestamp: 634818815665, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=26f0740f-f0b5-4a29-9be5-f9f5d449bff3] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=26f0740f-f0b5-4a29-9be5-f9f5d449bff3] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=fd34f7f0-cbc0-4e36-b9b2-e8772b70af59] opened session at timestamp: 634818815685, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=fd34f7f0-cbc0-4e36-b9b2-e8772b70af59] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=fd34f7f0-cbc0-4e36-b9b2-e8772b70af59] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=2dd54697-7aaf-4377-bbb2-6971a7958b98] opened session at timestamp: 634818815705, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=2dd54697-7aaf-4377-bbb2-6971a7958b98] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=2dd54697-7aaf-4377-bbb2-6971a7958b98] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=de58cd5e-e209-4f53-b646-f6b24b7d0caf] opened session at timestamp: 634818815725, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=de58cd5e-e209-4f53-b646-f6b24b7d0caf] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=de58cd5e-e209-4f53-b646-f6b24b7d0caf] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=835bcff5-7f85-4075-8764-2beb4f804e77] opened session at timestamp: 634818815745, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=835bcff5-7f85-4075-8764-2beb4f804e77] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=835bcff5-7f85-4075-8764-2beb4f804e77] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c91de9b8-8310-43c1-a4bf-2b3502db067c] opened session at timestamp: 634818815765, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c91de9b8-8310-43c1-a4bf-2b3502db067c] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c91de9b8-8310-43c1-a4bf-2b3502db067c] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f3142faf-22c2-4342-9091-bf0a0f67c652] opened session at timestamp: 634818815785, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f3142faf-22c2-4342-9091-bf0a0f67c652] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=f3142faf-22c2-4342-9091-bf0a0f67c652] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c5f4f85e-0f73-4f55-8fdc-4f3177b0d6b5] opened session at timestamp: 634818815805, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c5f4f85e-0f73-4f55-8fdc-4f3177b0d6b5] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=c5f4f85e-0f73-4f55-8fdc-4f3177b0d6b5] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=18a6c762-4ff5-45ad-a23c-fc63a112e1d2] opened session at timestamp: 634818815825, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=18a6c762-4ff5-45ad-a23c-fc63a112e1d2] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=18a6c762-4ff5-45ad-a23c-fc63a112e1d2] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=76fa2a1f-8aca-4619-bdb2-8b95ffa2ee75] opened session at timestamp: 634818815845, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=76fa2a1f-8aca-4619-bdb2-8b95ffa2ee75] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=76fa2a1f-8aca-4619-bdb2-8b95ffa2ee75] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=d25b3f92-d20e-46ce-8cba-147521aee475] opened session at timestamp: 634818815865, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=d25b3f92-d20e-46ce-8cba-147521aee475] running ISession.Dispose()
+DEBUG 5 NHibernate.Impl.SessionImpl - [session-id=d25b3f92-d20e-46ce-8cba-147521aee475] executing real Dispose(True)
+DEBUG 5 NHibernate.Impl.SessionImpl - closing session
+DEBUG 5 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=782b4978-ce68-4601-9dcb-ade9d750d87f] opened session at timestamp: 634818815885, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=782b4978-ce68-4601-9dcb-ade9d750d87f] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=782b4978-ce68-4601-9dcb-ade9d750d87f] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=189ba9c5-492c-4d15-815e-ca9a03f9078b] opened session at timestamp: 634818815905, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=189ba9c5-492c-4d15-815e-ca9a03f9078b] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=189ba9c5-492c-4d15-815e-ca9a03f9078b] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=d9aac676-d93d-4db9-85fe-d30845823566] opened session at timestamp: 634818815925, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=d9aac676-d93d-4db9-85fe-d30845823566] running ISession.Dispose()
+DEBUG 11 NHibernate.Impl.SessionImpl - [session-id=d9aac676-d93d-4db9-85fe-d30845823566] executing real Dispose(True)
+DEBUG 11 NHibernate.Impl.SessionImpl - closing session
+DEBUG 11 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=93d80879-6ee0-4afb-87d7-1e6cc128fa09] opened session at timestamp: 634818815945, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=93d80879-6ee0-4afb-87d7-1e6cc128fa09] running ISession.Dispose()
+DEBUG 13 NHibernate.Impl.SessionImpl - [session-id=93d80879-6ee0-4afb-87d7-1e6cc128fa09] executing real Dispose(True)
+DEBUG 13 NHibernate.Impl.SessionImpl - closing session
+DEBUG 13 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=22eb3e9b-5947-4b44-9f4f-047df6441793] opened session at timestamp: 634818815965, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=22eb3e9b-5947-4b44-9f4f-047df6441793] running ISession.Dispose()
+DEBUG 6 NHibernate.Impl.SessionImpl - [session-id=22eb3e9b-5947-4b44-9f4f-047df6441793] executing real Dispose(True)
+DEBUG 6 NHibernate.Impl.SessionImpl - closing session
+DEBUG 6 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=9516dc59-7434-4044-ba35-b2dfd1c5201f] opened session at timestamp: 634818815985, for session factory: [/cae7c03f3b494ce4970e6bf1acfe27e4]
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=9516dc59-7434-4044-ba35-b2dfd1c5201f] running ISession.Dispose()
+DEBUG 8 NHibernate.Impl.SessionImpl - [session-id=9516dc59-7434-4044-ba35-b2dfd1c5201f] executing real Dispose(True)
+DEBUG 8 NHibernate.Impl.SessionImpl - closing session
+DEBUG 8 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)

@@ -1,0 +1,38 @@
+﻿@model Gustaf.Lab1.Web.Models.NewPersonModel
+           
+@{
+    ViewBag.Title = "Add new person";
+}
+<h2>Add new person</h2>
+@using( Html.BeginForm() )
+{
+    @Html.TextBoxFor(model => model.FirstName)
+    @Html.TextBoxFor(model => model.LastName)
+    <input type="button" class="button"  value="Add" />
+    <div id="Message" style="display:none">
+    </div>
+    
+    <script type="text/javascript">
+        $(function (e) {
+            $(".button").click(function () {
+                newPerson();
+            });
+        });
+    function newPerson() {
+        var person = {
+        };
+	    person.FirstName = $("#FirstName").val();
+	    person.LastName = $("#LastName").val();
+
+	    //Måste vara HttpPost för att hamna i rätt Controller och getJSON är en HttpGet
+        //$.getJSON("NewPerson", person, updateFields);
+	    $.getJSON("AddNewPerson", person, updateFields);
+    };
+
+    updateFields = function (data) {
+        $("#Message").html(data.Message);
+        $("#Message").fadeIn();
+    };
+</script>
+}
+
